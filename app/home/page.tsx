@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Images from "public/Images.png";
+import MultipleItems from "./carousel";
 
 export default function Home() {
   return (
@@ -66,7 +67,7 @@ export default function Home() {
           <h1 className="text-l text-darkBlue font-bold mb-5">
             Удивительные места по всему Узбекистану
           </h1>
-          <div>spiner with posts</div>
+          <MultipleItems />
           <div>buttons</div>
         </div>
       </div>
