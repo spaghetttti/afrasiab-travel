@@ -1,6 +1,5 @@
 "use client";
 // Import Swiper React components
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -19,7 +18,7 @@ export function SwiperCarousel() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         navigation={true}
         spaceBetween={30}
         // pagination={{
@@ -27,6 +26,11 @@ export function SwiperCarousel() {
         // }}
         modules={[Navigation]}
         className="mySwiper"
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {CarouselItems.map((item) => (
           <SwiperSlide>

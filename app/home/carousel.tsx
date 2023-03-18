@@ -1,14 +1,10 @@
 "use client";
 import Image from "next/image";
-// import Image1 from "public/C1.png";
-// import Image2 from "public/C2.png";
-// import Image3 from "public/C3.png";
-// import Image4 from "public/C4.png";
-// import Image5 from "public/C5.png";
 
 import Slider from "react-slick";
 import "./carousel.css";
 import { CarouselItems } from "../data/data";
+import { Component } from "react";
 
 // interface CarouselItemProps {
 //   title: string,
@@ -37,26 +33,37 @@ export function CarouselItem(itemInfo: any) {
   );
 }
 
-export function MultipleItems() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    // slidesToScroll: 3,
-    useCSS: true,
-    className: "center",
-    centerMode: true,
-  };
-  return (
-    <div>
-      <Slider {...settings}>
-        {CarouselItems.map((item) => (
-          <>
-            <CarouselItem itemInfo={item} />
-          </>
-        ))}
-      </Slider>
-    </div>
-  );
+function MultipleItems() {
+    const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      useCSS: true,
+      className: "center",
+      responsive: [
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToScroll: 1,
+            className: 'nope',
+            slidesToShow: 1,
+            centerMode: false,
+          },
+        },
+      ],
+      centerMode: true,
+    };
+    return (
+        <Slider {...settings}>
+          {CarouselItems.map((item) => (
+            <>
+              <CarouselItem itemInfo={item} />
+            </>
+          ))}
+        </Slider>
+    );
 }
+
+export default MultipleItems;

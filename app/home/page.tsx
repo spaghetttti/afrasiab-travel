@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Images from "public/Images.png";
-import { MultipleItems } from "./carousel";
+import MultipleItems from "./carousel";
 import { SwiperCarousel } from "./swiperCarousel";
 
 export default function Home() {
