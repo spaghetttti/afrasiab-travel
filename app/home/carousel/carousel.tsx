@@ -11,7 +11,6 @@ function MultipleItems() {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
     useCSS: true,
     className: "center",
     responsive: [
