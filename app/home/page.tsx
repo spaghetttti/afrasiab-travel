@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Images from "public/Images.png";
-import { MultipleItems } from "./carousel";
-import { SwiperCarousel } from "./swiperCarousel";
+
+import MultipleItems from "./carousel/carousel";
+import { SwiperCarousel } from "./carousel/swiperCarousel";
+import { Cities } from "../data/data";
+import { City } from "../components/city";
 
 export default function Home() {
   return (
@@ -11,24 +14,26 @@ export default function Home() {
           <span className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:text-6xl text-3xl">
             ИССЛЕДУЙТЕ
           </span>
-          <span className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] p-5 lg:text-9xl text-6xl">
+          <span className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:p-5 lg:text-9xl text-6xl">
             УЗБЕКИСТАН
           </span>
           <span className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:text-6xl text-3xl">
             ВСЕМЕ С НАМИ
           </span>
           {/* change below basic yellow into custom color in config file */}
-          <button className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded-full mt-8">
-            <p className="text-base">Бронировать</p>
+          <button className="transition ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-2 px-4 rounded-full mt-8">
+            <p className="text-base p-2 drop-shadow-[0px_4px_1px_rgba(0,0,0,0.1)]">
+              Бронировать
+            </p>
           </button>
         </h1>
       </div>
       <div className="lg:m-[8%] lg:text-start m-[4%] text-center ">
         <div className="flex lg:flex-row flex-col-reverse lg:space-x-20 mb-20">
-          <div className="">
+          <div>
             <Image
               src={Images}
-              className="w-auto lg:w-[1000px] h-auto"
+              className=" lg:w-[1000px] h-auto"
               alt=""
             />
           </div>
@@ -69,9 +74,32 @@ export default function Home() {
             Удивительные места по всему Узбекистану
           </h1>
           <MultipleItems />
-          <div>buttons
-
-          <SwiperCarousel/>
+          <div>
+            <SwiperCarousel />
+          </div>
+        </div>
+        <div className="flex flex-col py-5">
+          <div className="text-sm text-yellow font-bold text-center">
+            ОТЗЫВЫ
+          </div>
+          <h1 className="text-l text-darkBlue font-bold mb-5 text-center">
+            Довольные клиенты по всему миру
+          </h1>
+          <>Пока пусто (сначала надо выбрать какой npm package использовать)</>
+        </div>
+        <div className="flex flex-col py-5 items-center ">
+          <h1 className="text-l text-darkBlue font-bold mb-5 ">
+            История городов Узбекистана
+          </h1>
+          <button className="mb-6 transition w-[300px] text-white ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-2 px-4 rounded-full mt-8">
+            <p className="text-base p-2 drop-shadow-[0px_4px_1px_rgba(0,0,0,0.1)]">
+              Просмотреть все
+            </p>
+          </button>
+          <div className="flex flex-wrap gap-x-5 justify-center">
+            {Cities.map((oneCity) => (
+              <City {...oneCity} key={oneCity.id}/>
+            ))}
           </div>
         </div>
       </div>

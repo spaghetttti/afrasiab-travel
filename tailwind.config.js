@@ -14,6 +14,7 @@ module.exports = {
         white: "#FFFFFF",
         darkBlue: "#112B3C",
         yellow: "#F2AB1C",
+        darkYellow: '#eaa20e',
         grey: "#808080",
       },
       fontSize: {
