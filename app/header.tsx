@@ -1,7 +1,7 @@
 "use client";
 //package imports
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 //local imports
 import Logo from "../public/logo.png";
 import Clock from "../public/Clock_0300.svg";

@@ -85,7 +85,7 @@ export default function Home() {
           <h1 className="text-l text-darkBlue font-bold mb-5 text-center">
             Довольные клиенты по всему миру
           </h1>
-          <>Пока пусто</>
+          <>Пока пусто (сначала надо выбрать какой npm package использовать)</>
         </div>
         <div className="flex flex-col py-5 items-center ">
           <h1 className="text-l text-darkBlue font-bold mb-5 ">
@@ -93,7 +93,7 @@ export default function Home() {
           </h1>
           <button className="mb-6 transition w-[300px] text-white ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-2 px-4 rounded-full mt-8">
             <p className="text-base p-2 drop-shadow-[0px_4px_1px_rgba(0,0,0,0.1)]">
-              Просмотреть все (сначала надо выбрать какой npm package использовать)
+              Просмотреть все
             </p>
           </button>
           <div className="flex flex-wrap gap-x-5 justify-center">
