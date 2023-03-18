@@ -3,23 +3,20 @@
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 //local imports
-import Logo from "../public/Logo.svg";
+import Logo from "../public/logo.png";
 import Clock from "../public/Clock_0300.svg";
 import Cloud from "../public/Cloud.svg";
 import USD from "../public/USD.svg";
 
 export function Header() {
   const pathName = usePathname();
-  console.log(pathName);
-
-  const style = {};
 
   return (
     // <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
     <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white-800">
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-        <a href="#" className="flex items-center">
-          <Image src={Logo} className="mr-3 h-6 w-full sm:h-9" alt="Logo" />
+        <a href="/home" className="flex items-center">
+          <Image src={Logo} className="mr-3 w-20" alt="Logo" />
         </a>
         <div className="flex items-center lg:hidden">
           <button
@@ -66,7 +63,11 @@ export function Header() {
                 href="/"
                 style={
                   pathName === "/"
-                    ? { borderBottom: "3px solid #F2AB1C", borderRadius: "2px", color: '#112B3C' }
+                    ? {
+                        borderBottom: "3px solid #F2AB1C",
+                        borderRadius: "2px",
+                        color: "#112B3C",
+                      }
                     : {}
                 }
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
@@ -80,7 +81,11 @@ export function Header() {
                 href="/about"
                 style={
                   pathName === "/about"
-                    ? { borderBottom: "3px solid #F2AB1C", borderRadius: "2px", color: '#112B3C' }
+                    ? {
+                        borderBottom: "3px solid #F2AB1C",
+                        borderRadius: "2px",
+                        color: "#112B3C",
+                      }
                     : {}
                 }
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
@@ -93,7 +98,11 @@ export function Header() {
                 href="#"
                 style={
                   pathName === "/tours"
-                    ? { borderBottom: "3px solid #F2AB1C", borderRadius: "2px", color: '#112B3C' }
+                    ? {
+                        borderBottom: "3px solid #F2AB1C",
+                        borderRadius: "2px",
+                        color: "#112B3C",
+                      }
                     : {}
                 }
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
@@ -106,7 +115,11 @@ export function Header() {
                 href="#"
                 style={
                   pathName === "/contacts"
-                    ? { borderBottom: "3px solid #F2AB1C", borderRadius: "2px", color: '#112B3C' }
+                    ? {
+                        borderBottom: "3px solid #F2AB1C",
+                        borderRadius: "2px",
+                        color: "#112B3C",
+                      }
                     : {}
                 }
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
