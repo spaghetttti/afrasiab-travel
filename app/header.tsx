@@ -3,10 +3,10 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 //local imports
-import Logo from "public/logo.png";
 import Clock from "../public/Clock_0300.svg";
 import Cloud from "../public/Cloud.svg";
 import USD from "../public/USD.svg";
+// import Logo from 'public/logo.png';
 
 export function Header() {
   const pathName = usePathname();
@@ -15,8 +15,8 @@ export function Header() {
     // <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
     <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white-800">
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-        <a href="/home" className="flex items-center">
-          <Image src={Logo} className="mr-3 w-20" alt="Logo" />
+        <a href="/home" className="flex items-center w-20">
+          <Image src='/logo.png' width={80} height={100} className="mr-3 w-20 h-auto" alt="Logo" />
         </a>
         <div className="flex items-center lg:hidden">
           <button
