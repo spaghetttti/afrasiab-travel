@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 //local imports
-import Logo from "../public/logo.png";
+import Logo from "public/logo.png";
 import Clock from "../public/Clock_0300.svg";
 import Cloud from "../public/Cloud.svg";
 import USD from "../public/USD.svg";

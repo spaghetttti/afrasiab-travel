@@ -33,8 +33,8 @@ export function SwiperCarousel() {
         }}
       >
         {CarouselItems.map((item) => (
-          <SwiperSlide>
-            <CarouselItem {...item} key={item.id} />
+          <SwiperSlide key={item.id}>
+            <CarouselItem {...item} />
           </SwiperSlide>
         ))}
       </Swiper>
