@@ -57,4 +57,6 @@ export const Cities = [
   { id: 2, image: Tashkent, title: "Ташкент" },
   { id: 3, image: Samarkand, title: "Самарканд" },
   { id: 4, image: Bukhara, title: "Бухара" },
+  { id: 5, image: Image3, title: "Хорезм" },
+
 ];

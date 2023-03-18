@@ -11,9 +11,9 @@ interface CarouselItemProps {
 
 export function CarouselItem({title, locations, price, duration, image ,}: CarouselItemProps) {
   return (
-    <div>
-      <div className="w-[360px] my-4 border-0 border-white rounded-2xl shadow-[0px_1px_4px_rgba(0,0,0,0.5)]">
-        <Image className="w-[360px] h-[240px] border-0 rounded-t-2xl" src={image} alt="" />
+    <div className="m-4">
+      <div className=" border-0 border-white rounded-2xl shadow-[0px_1px_4px_rgba(0,0,0,0.5)]">
+        <Image className="w-full h-[240px] border-0 rounded-t-2xl" src={image} alt="" />
         <div className="p-5 ">
           <p className="text-base font-bold">{title}</p>
           <p className="text-sm">{locations}</p>
