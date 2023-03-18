@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Images from "public/Images.png";
-import MultipleItems from "./carousel";
+import { MultipleItems } from "./carousel";
+import { SwiperCarousel } from "./swiperCarousel";
 
 export default function Home() {
   return (
@@ -68,7 +69,10 @@ export default function Home() {
             Удивительные места по всему Узбекистану
           </h1>
           <MultipleItems />
-          <div>buttons</div>
+          <div>buttons
+
+          <SwiperCarousel/>
+          </div>
         </div>
       </div>
     </>
