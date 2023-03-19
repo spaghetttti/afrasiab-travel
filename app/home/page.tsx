@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Images from "public/Images.png";
 
-import MultipleItems from "./carousel/carousel";
 import { SwiperCarousel } from "./carousel/swiperCarousel";
 import { Cities } from "../data/data";
 import { City } from "../components/city";
+import SwiperReviews from './carousel/swiperReviews';
 
 export default function Home() {
   return (
@@ -73,21 +73,20 @@ export default function Home() {
           <h1 className="text-l text-darkBlue font-bold mb-5">
             Удивительные места по всему Узбекистану
           </h1>
-          <MultipleItems />
           <div>
             <SwiperCarousel />
           </div>
         </div>
-        <div className="flex flex-col py-5">
-          <div className="text-sm text-yellow font-bold text-center">
+        <div className="flex flex-col py-5 items-center ">
+          <div className="text-sm text-yellow font-bold">
             ОТЗЫВЫ
           </div>
-          <h1 className="text-l text-darkBlue font-bold mb-5 text-center">
+          <h1 className="text-l text-darkBlue font-bold mb-5">
             Довольные клиенты по всему миру
           </h1>
-          <>Пока пусто (сначала надо выбрать какой npm package использовать)</>
-        </div>
-        <div className="flex flex-col py-5 items-center ">
+          <SwiperReviews />
+        {/* </div> */}
+        {/* <div className="flex flex-col py-5 items-center "> */}
           <h1 className="text-l text-darkBlue font-bold mb-5 ">
             История городов Узбекистана
           </h1>

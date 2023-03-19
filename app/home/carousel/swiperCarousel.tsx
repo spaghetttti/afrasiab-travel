@@ -1,6 +1,7 @@
 "use client";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./carousel.css";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,18 +14,22 @@ import { Navigation } from "swiper";
 
 import { CarouselItem } from "@/app/components/carousel-item";
 import { CarouselItems } from "../../data/data";
-
+import "swiper/css/scrollbar";
+import { Scrollbar } from "swiper";
 export function SwiperCarousel() {
   return (
     <>
       <Swiper
         slidesPerView={1}
         navigation={true}
-        spaceBetween={30}
+        spaceBetween={20}
         // pagination={{
         //   clickable: true,
         // }}
-        modules={[Navigation]}
+        scrollbar={{
+          hide: true,
+        }}
+        modules={[Navigation, Scrollbar]}
         className="mySwiper"
         breakpoints={{
           768: {
