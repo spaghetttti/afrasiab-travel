@@ -1,17 +1,19 @@
-import './globals.css'
-import { Header } from './header'
+import Footer from "./footer";
+import "./globals.css";
+import { Header } from "./header";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body>
         <Header />
         {children}
-        </body>
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }
