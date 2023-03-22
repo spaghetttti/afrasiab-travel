@@ -27,6 +27,7 @@ export default function Footer() {
         <div className="flex flex-col">
           <h4 className="text-base font-bold">Главная</h4>
           <div className="mt-2 flex lg:flex-col sm:flex-row lg:space-y-2 justify-between">
+          <Link href="/home">Главная</Link>
             <Link href="/about">О нас</Link>
             <Link href="/">Авторские Туры</Link>
             <Link href="/">Города</Link>
