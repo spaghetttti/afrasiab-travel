@@ -14,7 +14,7 @@ export function Header() {
     // <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
     <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white-800">
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-        <a href="/home" className="flex items-center w-20">
+        <a href="/" className="flex items-center w-20">
           <Image
             src={Logo}
             width={80}
@@ -69,7 +69,7 @@ export function Header() {
             </li>
             <li>
               <a
-                href="#"
+                href="/tours"
                 style={
                   pathName === "/tours"
                     ? {

@@ -68,7 +68,7 @@ export function PopMenu() {
                 </button>
                 <div className="relative px-4 flex-auto">
                   <div className="text-m font-bold flex items-center flex-col space-y-2">
-                    <Link href="/home">Главная</Link>
+                    <Link href="/">Главная</Link>
                     <Link href="/about">О нас</Link>
                     <Link href="/">Авторские Туры</Link>
                     <Link href="/">Города</Link>

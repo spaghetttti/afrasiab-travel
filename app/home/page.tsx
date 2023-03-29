@@ -5,6 +5,7 @@ import { SwiperCarousel } from "./carousel/swiperCarousel";
 import { Cities } from "../data/data";
 import { City } from "../components/city";
 import SwiperReviews from './carousel/swiperReviews';
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col">
             <div className="text-sm text-yellow font-bold">О НАС</div>
-            <h1 className="text-l text-darkBlue font-bold mb-5">
+            <h1 className="leading-tight text-l text-darkBlue font-bold mb-5">
               Наш план тура - исполнить желание вашей мечты
             </h1>
             <div>
@@ -70,7 +71,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col">
           <div className="text-sm text-yellow font-bold">АВТОРСКИЕ ТУРЫ</div>
-          <h1 className="text-l text-darkBlue font-bold mb-5">
+          <h1 className="leading-tight text-l text-darkBlue font-bold mb-5">
             Удивительные места по всему Узбекистану
           </h1>
           <div>
@@ -81,19 +82,21 @@ export default function Home() {
           <div className="text-sm text-yellow font-bold">
             ОТЗЫВЫ
           </div>
-          <h1 className="text-l text-darkBlue font-bold mb-5">
+          <h1 className="leading-tight text-l text-darkBlue font-bold mb-5">
             Довольные клиенты по всему миру
           </h1>
           <SwiperReviews />
         {/* </div> */}
         {/* <div className="flex flex-col py-5 items-center "> */}
-          <h1 className="mt-8 text-l text-darkBlue font-bold ">
+          <h1 className="leading-tight mt-8 text-l text-darkBlue font-bold ">
             История городов Узбекистана
           </h1>
           <button className="mb-6 transition w-[300px] text-white ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-2 px-4 rounded-full mt-8">
+          <Link href='/cities'>
             <p className="text-base p-2 drop-shadow-[0px_4px_1px_rgba(0,0,0,0.1)]">
               Просмотреть все
             </p>
+          </Link>
           </button>
           <div className="flex flex-wrap gap-x-5 justify-center">
             {Cities.map((oneCity) => (

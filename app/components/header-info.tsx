@@ -5,7 +5,7 @@ import USD from "public/USD.svg";
 import { useEffect, useState } from "react";
 
 export default function HeaderInfo() {
-  const [weather, setWeather] = useState<string>("");
+  const [weather, setWeather] = useState<string>("15");
   const [currency, setCurrency] = useState<number>(11367);
   const currentDate = new Date();
 
