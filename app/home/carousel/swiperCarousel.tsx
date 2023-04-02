@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Navigation } from "swiper";
 
-import { CarouselItem } from "@/app/components/carousel-item";
+import { CarouselItem } from "@/components/carousel-item";
 import { CarouselItems } from "../../data/data";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper";

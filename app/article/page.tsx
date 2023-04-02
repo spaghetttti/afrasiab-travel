@@ -1,6 +1,6 @@
 // import { CarouselItems } from "../data/data";
 import Image1 from "public/mosque.jpg";
-import BasicCard from "../components/basic-card";
+import BasicCard from "../../components/basic-card";
 // import { gridElementProps } from "../components/grid-element";
 
 export default function Article() {
@@ -21,7 +21,7 @@ export default function Article() {
           {data.title}
         </span>
       </div>
-      <div className="lg:m-[8%] lg:text-start m-[4%] text-center ">
+      <div className="lg:mx-[8%] lg:text-start m-[4%] text-center ">
       <BasicCard {...data}/>
     </div>
     </>

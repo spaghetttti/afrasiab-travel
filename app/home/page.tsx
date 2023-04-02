@@ -3,7 +3,7 @@ import Images from "public/Images.png";
 
 import { SwiperCarousel } from "./carousel/swiperCarousel";
 import { Cities } from "../data/data";
-import { City } from "../components/city";
+import { City } from "../../components/city";
 import SwiperReviews from './carousel/swiperReviews';
 import Link from "next/link";
 
@@ -15,11 +15,11 @@ export default function Home() {
           <span className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:text-6xl text-3xl">
             ИССЛЕДУЙТЕ
           </span>
-          <span className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:p-5 lg:text-9xl text-6xl">
+          <span className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:p-5 lg:text-9xl text-6xl lg:leading-[85%]">
             УЗБЕКИСТАН
           </span>
           <span className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:text-6xl text-3xl">
-            ВСЕМЕ С НАМИ
+          ВМЕСТЕ С НАМИ
           </span>
           {/* change below basic yellow into custom color in config file */}
           <button className="transition ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-2 px-4 rounded-full mt-8">
