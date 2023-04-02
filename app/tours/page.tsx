@@ -1,7 +1,7 @@
 "use client";
 import { CarouselItems } from "../data/data";
 // import { usePathname} from "next/navigation";
-import GridElement from "../components/grid-element";
+import GridElement from "../../components/grid-element";
 
 export default function GridMenu() {
   // const pathName = usePathname();
