@@ -15,10 +15,14 @@ export default function About() {
         <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="sm:max-w-lg">
             <h1 className="font lg:leading-[97%] lg:text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Afrasiab Travel приглашает вас посетить Узбекистан по нашим маршрутам!
+              Afrasiab Travel приглашает вас посетить Узбекистан по нашим
+              маршрутам!
             </h1>
             <p className="mt-4 text-xl text-gray-500">
-            Мы - опытная туристическая компания с профессиональными специалистами в данной области до 40 лет опыта. Мы охватывает все исторические регионы Узбекистана и гарантируем незабываемые впечатления и уникальный опыт путешествия в Узбекистан!. 
+              Мы - опытная туристическая компания с профессиональными
+              специалистами в данной области до 40 лет опыта. Мы охватывает все
+              исторические регионы Узбекистана и гарантируем незабываемые
+              впечатления и уникальный опыт путешествия в Узбекистан!.
             </p>
           </div>
           <div>
@@ -39,7 +43,7 @@ export default function About() {
                         />
                       </div>
                       <div className="h-64 w-44 overflow-hidden rounded-lg">
-                      <Image
+                        <Image
                           src={Image2}
                           alt=""
                           className="h-full w-full object-cover object-center"
@@ -89,12 +93,11 @@ export default function About() {
                 </div>
               </div>
 
-              <a
-                href="#"
-                className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
-              >
-                Shop Collection
-              </a>
+              <button className="text-white transition ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-2 px-4 rounded-full mt-8">
+                <p className="text-base font-bold p-2 drop-shadow-[0px_4px_1px_rgba(0,0,0,0.1)]">
+                  Бронировать
+                </p>
+              </button>
             </div>
           </div>
         </div>

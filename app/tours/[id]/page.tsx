@@ -9,7 +9,7 @@ export default function Page({ params }: { params: { id: number } }) {
   // const fullStyle = "w-full h-[25vh] bg-[url('../public/mosque.jpg')] bg-cover bg-center flex justify-center items-center";
 
   return (
-    <>
+    <div className="pb-2">
       <div
         // className={`w-full h-[25vh] bg-[url('../public/mosque.jpg')] bg-cover bg-center flex justify-center items-center`}
         // className={'w-full h-[25vh] bg-cover bg-center flex justify-center items-center' + imageSrc}
@@ -22,6 +22,6 @@ export default function Page({ params }: { params: { id: number } }) {
       <div className="lg:mx-[8%] lg:text-start m-[4%] text-center ">
         <BasicCard {...data} />
       </div>
-    </>
+    </div>
   );
 }
