@@ -1,7 +1,7 @@
 import BasicTabs from "./basic-tabs";
-import { gridElementProps } from "./grid-element";
+// import { gridElementProps } from "./grid-element";
 
-export default function BasicCard({ ...data }: gridElementProps) {
+export default function BasicCard({ ...data }: any) {
   return (
     <div className="flex justify-center ">
       <div className="rounded-xl border-0 p-5 shadow-md w-full bg-white">

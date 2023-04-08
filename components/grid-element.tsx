@@ -1,18 +1,22 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export interface gridElementProps {
-  id: number;
+  id?: number;
   image: StaticImageData;
-  title: string;
+  title?: string;
   locations?: string;
   price?: string;
   duration?: string;
 }
 
 export default function GridElement({ ...data }: gridElementProps) {
+  const pathName = usePathname();
   return (
     <div className="m-4">
-        <div className=" border-0 border-white rounded-2xl shadow-[0px_1px_4px_rgba(0,0,0,0.5)]">
+      <Link href={`${pathName}/${data.id}`}>
+        <div className="border-0 bg-white border-white rounded-2xl shadow-[0px_1px_4px_rgba(0,0,0,0.5)]">
           <Image
             className="w-full h-[240px] border-0 rounded-t-2xl"
             src={data.image}
@@ -27,6 +31,7 @@ export default function GridElement({ ...data }: gridElementProps) {
             </div>
           </div>
         </div>
+      </Link>
     </div>
   );
 }

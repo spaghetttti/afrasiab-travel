@@ -18,6 +18,7 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "7 дней / 6 ночей",
     image: Image1,
+    imageStyle: "w-full h-[25vh] bg-[url('../public/mausoleum.jpg')] bg-cover bg-center flex justify-center items-center"
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "7 дней / 6 ночей",
     image: Image2,
+    imageStyle: "w-full h-[25vh] bg-[url('../public/samarkand.jpg')] bg-cover bg-center flex justify-center items-center"
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "5 дней / 4 ночей",
     image: Image3,
+    imageStyle: "w-full h-[25vh] bg-[url('../public/bukhara-sky.jpg')] bg-cover bg-center flex justify-center items-center"
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "8 дней / 7 ночей",
     image: Image4,
+    imageStyle: "w-full h-[25vh] bg-[url('../public/chimgan.jpg')] bg-cover bg-center flex justify-center items-center"
   },
   {
     id: 5,
@@ -50,6 +54,7 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "8 дней / 7 ночей",
     image: Image5,
+    imageStyle: "w-full h-[25vh] bg-[url('../public/bazaar  .jpg')] bg-cover bg-center flex justify-center items-center"
   },
 ];
 
