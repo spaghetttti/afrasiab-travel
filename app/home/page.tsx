@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Images from "public/Images.png";
-
 import { SwiperCarousel } from "./carousel/swiperCarousel";
 import { Cities } from "../data/data";
 import { City } from "../../components/city";

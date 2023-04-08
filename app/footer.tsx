@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="lg:px-[8%] lg:py-[4%] p-[4%] flex align-center flex-col lg:flex-row lg:space-x-12">
+    <div className="lg:px-[8%] lg:py-[4%] p-[4%] flex align-center flex-col lg:flex-row lg:space-x-12 drop-shadow-[0px_4px_10px_rgba(255,255,255,0.3)]">
       <div className="flex flex-col grow-0 space-y-4">
         <Image src={Logo} className="w-[100px] h-auto" alt="" />
         <div className="text-sm">г. Самарканд, ул. Орзу Махмудова дом 18</div>
