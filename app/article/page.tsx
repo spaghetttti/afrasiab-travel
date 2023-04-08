@@ -12,6 +12,7 @@ export default function Article() {
     duration: "7 дней / 6 ночей",
     image: Image1,
   };
+  
   return (
     <>
       <div

@@ -1,21 +1,19 @@
 "use client";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./carousel.css";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
 import "swiper/css/pagination";
 
 // import required modules
 import { Navigation } from "swiper";
 
-import { CarouselItem } from "@/components/carousel-item";
 import { CarouselItems } from "../../data/data";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper";
+import GridElement from "@/components/grid-element";
 export function SwiperCarousel() {
   return (
     <>
@@ -23,9 +21,6 @@ export function SwiperCarousel() {
         slidesPerView={1}
         navigation={true}
         spaceBetween={20}
-        // pagination={{
-        //   clickable: true,
-        // }}
         scrollbar={{
           hide: true,
         }}
@@ -39,7 +34,7 @@ export function SwiperCarousel() {
       >
         {CarouselItems.map((item) => (
           <SwiperSlide key={item.id}>
-            <CarouselItem {...item} />
+            <GridElement {...item} />
           </SwiperSlide>
         ))}
       </Swiper>

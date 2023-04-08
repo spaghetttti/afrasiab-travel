@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Images from "public/Images.png";
-
 import { SwiperCarousel } from "./carousel/swiperCarousel";
 import { Cities } from "../data/data";
 import { City } from "../../components/city";
 import SwiperReviews from './carousel/swiperReviews';
 import Link from "next/link";
+import GridElement from "@/components/grid-element";
 
 export default function Home() {
   return (
@@ -29,12 +29,12 @@ export default function Home() {
           </button>
         </h1>
       </div>
-      <div className="lg:m-[8%] lg:text-start m-[4%] text-center ">
+      <div className="lg:px-[8%] lg:pt-[4%] lg:text-start px-[4%] pt-[2%] text-center ">
         <div className="flex lg:flex-row flex-col-reverse lg:space-x-20 mb-20">
           <div>
             <Image
               src={Images}
-              className=" lg:w-[1000px] h-auto"
+              className="lg:w-[1000px] h-auto"
               alt=""
             />
           </div>
@@ -86,8 +86,6 @@ export default function Home() {
             Довольные клиенты по всему миру
           </h1>
           <SwiperReviews />
-        {/* </div> */}
-        {/* <div className="flex flex-col py-5 items-center "> */}
           <h1 className="leading-tight mt-8 text-l text-darkBlue font-bold ">
             История городов Узбекистана
           </h1>
