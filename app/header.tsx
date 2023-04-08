@@ -12,8 +12,8 @@ export function Header() {
   const pathName = usePathname();
 
   return (
-    <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white-800 drop-shadow-[0px_4px_10px_rgba(255,255,255,0.3)]">
-      <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+    <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white-800 ">
+      <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
         <Link href="/" className="flex items-center w-20">
           <Image
             src={Logo}

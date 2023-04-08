@@ -7,7 +7,7 @@ import Image5 from "public/bazaar.jpg";
 import Bukhara from "public/bukhara.jpg";
 import Tashkent from "public/tashkent.jpg";
 import Hiva from "public/mosque.jpg";
-import Samarkand from "public/samarkand-big.jpg";
+
 export default function About() {
   return (
     <div className="relative overflow-hidden ">

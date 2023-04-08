@@ -54,7 +54,7 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "8 дней / 7 ночей",
     image: Image5,
-    imageStyle: "w-full h-[25vh] bg-[url('../public/bazaar  .jpg')] bg-cover bg-center flex justify-center items-center"
+    imageStyle: "w-full h-[25vh] bg-[url('../public/bazaar.jpg')] bg-cover bg-center flex justify-center items-center"
   },
 ];
 
