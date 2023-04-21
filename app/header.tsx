@@ -12,9 +12,9 @@ export function Header() {
   const pathName = usePathname();
 
   return (
-    <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white-800 ">
-      <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
-        <Link href="/" className="flex items-center w-20">
+    <nav className="bg-white text-sm border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white-800 ">
+      <div className="flex justify-between items-center mx-auto max-w-screen-xl ">
+        <Link href="/" className="flex basis-1/3 items-center">
           <Image
             src={Logo}
             width={80}
@@ -27,7 +27,7 @@ export function Header() {
           <PopMenu />
         </div>
         <div
-          className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+          className="hidden  basis-1/3 justify-between items-center w-full ml-30 lg:flex lg:w-auto lg:order-1"
           id="mobile-menu-2"
         >
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
@@ -102,7 +102,7 @@ export function Header() {
             </li>
           </ul>
         </div>
-        <div className="hidden lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+        <div className="hidden basis-1/3 lg:flex items-center w-auto justify-end lg:order-1" id="mobile-menu-2">
           <HeaderInfo />
         </div>
       </div>

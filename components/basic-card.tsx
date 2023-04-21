@@ -8,28 +8,17 @@ export default function BasicCard({ ...data }: any) {
         <div className="flex w-full items-center justify-between border-b-2 pb-3">
           <div className="flex items-center space-x-3">
             {/*USE A LOGO (ANTS DESINGN OR SMTH) <div className="h-8 w-8 rounded-full bg-slate-400 bg-[url('https://i.pravatar.cc/32')]"></div> */}
-            <div className="text-lg font-bold text-slate-700">{data.locations || data.title}</div>
+            <div className="text-lg font-bold text-slate-700">
+              {data.locations || data.title}
+            </div>
           </div>
           <div className="flex items-center space-x-8">
-          <div className="text-xs text-neutral-500">{data?.duration}</div>
+            <div className="text-xs text-neutral-500">{data?.duration}</div>
             <div className="text-xs text-neutral-500">{data?.price}</div>
           </div>
         </div>
 
-            <BasicTabs />
-        <div className="mt-4 mb-6">
-          {/* <div className="mb-3 text-xl font-bold">
-            Nulla sed leo tempus, feugiat velit vel, rhoncus neque?
-          </div> */}
-          {/* <div className="text-sm text-neutral-600">
-            Aliquam a tristique sapien, nec bibendum urna. Maecenas convallis
-            dignissim turpis, non suscipit mauris interdum at. Morbi sed gravida
-            nisl, a pharetra nulla. Etiam tincidunt turpis leo, ut mollis ipsum
-            consectetur quis. Etiam faucibus est risus, ac condimentum mauris
-            consequat nec. Curabitur eget feugiat massa
-          </div> */}
-        </div>
-
+        <BasicTabs />
         <div>
           <div className="flex items-center justify-between text-slate-500">
             <div className="flex space-x-4 md:space-x-8">

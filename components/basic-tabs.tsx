@@ -58,7 +58,7 @@ export default function BasicTabs() {
 
   return (
     <Tabs value="html" className="mt-2">
-      <TabsHeader  className="flex sm:flex-col lg:flex-row flex-wrap ">
+      <TabsHeader  className="flex flex-col lg:flex-row flex-wrap ">
         {data.map(({ label  , value }) => (
           <Tab className="text-sm w-auto mr-4 p-2" key={value} value={value}>
             {label}

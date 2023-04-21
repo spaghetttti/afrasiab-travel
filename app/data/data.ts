@@ -59,10 +59,10 @@ export const CarouselItems = [
 ];
 
 export const Cities = [
-  { id: 1, image: Hiva, title: "Хива" },
-  { id: 2, image: Tashkent, title: "Ташкент" },
-  { id: 3, image: Samarkand, title: "Самарканд" },
-  { id: 4, image: Bukhara, title: "Бухара" },
+  { id: 1, image: Hiva, title: "Хива", imageStyle: "w-full h-[25vh] bg-[url('../public/mosque.jpg')] bg-cover bg-center flex justify-center items-center" },
+  { id: 2, image: Tashkent, title: "Ташкент", imageStyle: "w-full h-[25vh] bg-[url('../public/tashkent.jpg')] bg-cover bg-center flex justify-center items-center" },
+  { id: 3, image: Samarkand, title: "Самарканд", imageStyle: "w-full h-[25vh] bg-[url('../public/samarkand-big.jpg')] bg-cover bg-center flex justify-center items-center" },
+  { id: 4, image: Bukhara, title: "Бухара", imageStyle: "w-full h-[25vh] bg-[url('../public/bukhara.jpg')] bg-cover bg-center flex justify-center items-center" },
   // { id: 5, image: Image3, title: "Хорезм" },
 ];
 
