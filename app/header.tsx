@@ -85,7 +85,7 @@ export function Header() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/contacts"
                 style={
                   pathName === "/contacts"
                     ? {
