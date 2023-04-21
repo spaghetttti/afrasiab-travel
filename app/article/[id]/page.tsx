@@ -4,7 +4,6 @@ export default function Page({
     params: { slug: string };
   }) {
     console.log(params.slug);
-    
     return (
         <>
         {params.slug}

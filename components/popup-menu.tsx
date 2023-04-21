@@ -1,5 +1,5 @@
 //library imports
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   HomeOutlined,
   UserOutlined,
@@ -8,8 +8,6 @@ import {
   PhoneOutlined,
 } from "@ant-design/icons";
 import Link from "next/link";
-//project imports
-import HeaderInfo from "./header-info";
 
 export function PopMenu() {
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -75,6 +73,7 @@ export function PopMenu() {
               <div className="relative px-4 flex-auto">
                 <div className="text-m gap-3 font-bold flex items-center flex-col space-y-2">
                   <Link
+                    onClick={() => setShowModal(false)}
                     href="/"
                     className="flex w-full items-center p-3 text-base font-bold text-darkBlue rounded-lg bg-lightGrey hover:bg-gray group hover:shadow "
                   >
@@ -85,6 +84,7 @@ export function PopMenu() {
                     </span>
                   </Link>
                   <Link
+                    onClick={() => setShowModal(false)}
                     href="/about"
                     className="flex w-full items-center p-3 text-base font-bold text-darkBlue rounded-lg bg-lightGrey hover:bg-gray group hover:shadow "
                   >
@@ -92,6 +92,7 @@ export function PopMenu() {
                     <span className="flex-1 ml-3 whitespace-nowrap">О нас</span>
                   </Link>
                   <Link
+                    onClick={() => setShowModal(false)}
                     href="/tours"
                     className="flex w-full items-center p-3 text-base font-bold text-darkBlue rounded-lg bg-lightGrey hover:bg-gray group hover:shadow "
                   >
@@ -101,6 +102,7 @@ export function PopMenu() {
                     </span>
                   </Link>
                   <Link
+                    onClick={() => setShowModal(false)}
                     href="/cities"
                     className="flex w-full items-center p-3 text-base font-bold text-darkBlue rounded-lg bg-lightGrey hover:bg-gray group hover:shadow "
                   >
@@ -110,6 +112,7 @@ export function PopMenu() {
                     </span>
                   </Link>
                   <Link
+                    onClick={() => setShowModal(false)}
                     href="/"
                     className="flex w-full items-center p-3 text-base font-bold text-darkBlue rounded-lg bg-lightGrey hover:bg-gray group hover:shadow "
                   >
