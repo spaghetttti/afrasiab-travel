@@ -113,7 +113,7 @@ export function PopMenu() {
                   </Link>
                   <Link
                     onClick={() => setShowModal(false)}
-                    href="/"
+                    href="/contacts"
                     className="flex w-full items-center p-3 text-base font-bold text-darkBlue rounded-lg bg-lightGrey hover:bg-gray group hover:shadow "
                   >
                     <PhoneOutlined />
