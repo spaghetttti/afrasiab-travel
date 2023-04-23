@@ -12,7 +12,6 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    // extend: {
       colors: {
         white: "#FFFFFF",
         blue: '#174664',
@@ -36,7 +35,6 @@ module.exports = {
         '6xl': '7.5rem',
         '9xl': '16rem',
       }
-    // },
   },
   plugins: [],
 };
