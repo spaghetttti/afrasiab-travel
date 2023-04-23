@@ -15,7 +15,7 @@ export default function TourCard({ ...data }: gridElementProps) {
   const pathName = usePathname();
   console.log(pathName, data.id);
   return (
-    <div className="m-4 w-min-[280px] h-[390px] border-0 bg-white border-white rounded-2xl shadow-[0px_1px_4px_rgba(0,0,0,0.5)]">
+    <div className="m-4 min-w-[320px] h-[390px] border-0 bg-white border-white rounded-2xl shadow-[0px_1px_4px_rgba(0,0,0,0.5)]">
       <Link href={data.price ? `/tours/${data.id}` : `/cities/${data.id}`}>
         <Image
           className="w-full h-[240px] border-0 rounded-t-2xl"

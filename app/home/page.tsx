@@ -5,6 +5,7 @@ import { Cities } from "../data/data";
 import { City } from "../../components/city";
 import SwiperReviews from './carousel/swiperReviews';
 import Link from "next/link";
+import Carousel from "@/components/Carousel";
 
 export default function Home() {
   return (
@@ -75,6 +76,7 @@ export default function Home() {
           </h1>
           <div>
             <SwiperCarousel />
+            <Carousel />
           </div>
         </div>
         <div className="flex flex-col py-5 items-center ">
