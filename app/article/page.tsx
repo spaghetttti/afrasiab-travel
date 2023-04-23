@@ -1,6 +1,6 @@
 // import { CarouselItems } from "../data/data";
 import Image1 from "public/mosque.jpg";
-import BasicCard from "../../components/basic-card";
+import BasicCard from "../../components/BasicCard";
 // import { gridElementProps } from "../components/grid-element";
 
 export default function Article() {

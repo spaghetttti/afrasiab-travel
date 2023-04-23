@@ -1,4 +1,4 @@
-import BasicTabs from "./basic-tabs";
+import BasicTabs from "./BasicTabs";
 // import { gridElementProps } from "./grid-element";
 
 export default function BasicCard({ ...data }: any) {

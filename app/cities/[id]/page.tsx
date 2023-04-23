@@ -1,5 +1,5 @@
 "use client";
-import BasicCard from "@/components/basic-card";
+import BasicCard from "@/components/BasicCard";
 import { Cities } from "@/app/data/data";
 
 export default function Page({ params }: { params: { id: number } }) {

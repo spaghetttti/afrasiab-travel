@@ -5,7 +5,7 @@ import USD from "public/USD.svg";
 import { useEffect, useState } from "react";
 
 export default function HeaderInfo() {
-  const [weather, setWeather] = useState<string>("15");
+  const [weather, setWeather] = useState<number>(15);
   const [currency, setCurrency] = useState<number>(11367);
   const currentDate = new Date();
 
@@ -14,7 +14,7 @@ export default function HeaderInfo() {
       "https://www.meteosource.com/api/v1/free/point?lat=41.3N&lon=69.2E&sections=current%2Chourly&language=en&units=metric&key=y1f9tymubwge617ftelk5zjkw54dg3chf1ckup94"
     )
       .then((res) => res.json())
-      .then((data) => setWeather(data.current.temperature));
+      .then((data) => setWeather(Number(data.current.temperature)));
   }, []);
 
   var myHeaders = new Headers();
@@ -36,7 +36,7 @@ export default function HeaderInfo() {
     <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
       <li className="flex justify-between items-center flex-row">
         <Image src={Cloud} className="w-6 mr-3 h-6 sm:h-9" alt="" />
-        <p className="block text-sm text-darkBlue">{weather} C°</p>
+        <p className="block text-sm text-darkBlue">{Math.round(weather)} C°</p>
       </li>
       <li className="flex justify-between items-center flex-row">
         <Image src={Clock} className="w-6 mr-3 h-6 sm:h-9" alt="" />

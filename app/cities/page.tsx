@@ -1,7 +1,7 @@
 "use client";
 import { Cities } from "../data/data";
 // import { usePathname} from "next/navigation";
-import GridElement from "../../components/grid-element";
+import { City } from "@/components/city";
 
 export default function GridMenu() {
   // const pathName = usePathname();
@@ -9,7 +9,7 @@ export default function GridMenu() {
   return (
       <div className="text-darkBlue grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {Cities.map((city) => (
-          <GridElement key={`key-${city.id}`} {...city} />
+          <City key={`key-${city.id}`} {...city} />
         ))}
       </div>
   );
