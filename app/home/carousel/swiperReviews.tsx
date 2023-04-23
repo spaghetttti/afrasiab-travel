@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import { Reviews } from "@/app/data/data";
 
 import { EffectCoverflow, Pagination } from "swiper";
-import Review from "@/components/review";
+import Review from "@/app/components/review";
 
 export default function SwiperReviews() {
   return (

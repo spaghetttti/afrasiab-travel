@@ -13,7 +13,7 @@ import { Navigation } from "swiper";
 import { CarouselItems } from "../../data/data";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper";
-import TourCard from "@/components/TourCard";
+import TourCard from "@/app/components/TourCard";
 export function SwiperCarousel() {
   return (
     <>

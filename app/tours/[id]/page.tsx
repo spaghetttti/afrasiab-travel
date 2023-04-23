@@ -1,5 +1,5 @@
 "use client";
-import BasicCard from "@/components/BasicCard";
+import BasicCard from "@/app/components/BasicCard";
 import { CarouselItems } from "@/app/data/data";
 
 export default function Page({ params }: { params: { id: number } }) {

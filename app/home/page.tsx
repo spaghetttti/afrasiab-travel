@@ -2,10 +2,10 @@ import Image from "next/image";
 import Images from "public/Images.png";
 import { SwiperCarousel } from "./carousel/swiperCarousel";
 import { Cities } from "../data/data";
-import { City } from "../../components/city";
+import { City } from "../components/city";
 import SwiperReviews from './carousel/swiperReviews';
 import Link from "next/link";
-import Carousel from "@/components/Carousel";
+import Carousel from "@/app/components/Carousel";
 
 export default function Home() {
   return (

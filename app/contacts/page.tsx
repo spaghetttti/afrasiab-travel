@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div className="lg:px-[8%] lg:py-[4%] lg:text-start px-[4%] py-[2%] text-center ">
       <div className="rounded-xl border-0 p-5 mb-10 shadow-md w-full bg-white">
-        <section className="relative p-10 z-10 overflow-hidden">
+        <section className="relative p-10 z-9 overflow-hidden">
           <div className="container mx-auto">
             <div className="-mx-4 flex flex-wrap lg:justify-between">
               <div className="w-full px-4 lg:w-1/2 xl:w-6/12">

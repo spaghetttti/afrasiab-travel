@@ -8,6 +8,11 @@ const ubuntu = Ubuntu({
   weight: ["400", "700"],
 });
 
+export const metadata = {
+  title: 'Afrasiab Travel',
+  description: 'Туристическая компания “Afrasiab Travel” приглашает вас посетить Узбекистан'
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -18,7 +23,7 @@ export default function RootLayout({
       <body className="text-darkBlue">
         <main className={ubuntu.className}>
           <Header />
-          <main className="bg-[#F6F6F6]">{children}</main>
+          <main className="bg-[#F6F6F6] pt-[75px]">{children}</main>
           <Footer />
         </main>
       </body>

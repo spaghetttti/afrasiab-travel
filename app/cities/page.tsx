@@ -1,7 +1,7 @@
 "use client";
 import { Cities } from "../data/data";
 // import { usePathname} from "next/navigation";
-import { City } from "@/components/city";
+import { City } from "@/app/components/city";
 
 export default function GridMenu() {
   // const pathName = usePathname();
