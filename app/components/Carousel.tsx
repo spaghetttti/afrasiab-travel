@@ -50,8 +50,8 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="carousel my-12 mx-auto">
-      <div className="relative ">
+    <div className="carousel my-12">
+      <div className="relative">
         {/* <div className="flex justify-between absolute top left w-full h-full">
           <button
             onClick={movePrev}
