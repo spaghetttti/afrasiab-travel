@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <nav className="fixed w-full z-10 bg-white text-sm px-4 lg:px-6 py-2.5 ">
-      <div className="flex justify-between items-center mx-auto max-w-screen-xl ">
+      <div className="flex justify-between items-center mx-auto">
         <Link href="/" className="flex basis-1/3 items-center">
           <Image
             src={Logo}
@@ -81,6 +81,23 @@ export function Header() {
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
               >
                 Авторские Туры
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/cities"
+                style={
+                  pathName === "/cities"
+                    ? {
+                        borderBottom: "3px solid #F2AB1C",
+                        borderRadius: "2px",
+                        color: "#112B3C",
+                      }
+                    : {}
+                }
+                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
+              >
+                Города
               </Link>
             </li>
             <li>
