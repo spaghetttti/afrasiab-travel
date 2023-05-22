@@ -7,7 +7,7 @@ import Image5 from "public/bazaar.jpg";
 import Bukhara from "public/bukhara.jpg";
 import Tashkent from "public/tashkent.jpg";
 import Hiva from "public/mosque.jpg";
-import BasicCard from "@/components/basic-card";
+import BasicCard from "@/app/components/BasicCard";
 
 export default function About() {
   return (

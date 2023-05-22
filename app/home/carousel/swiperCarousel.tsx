@@ -13,7 +13,7 @@ import { Navigation } from "swiper";
 import { CarouselItems } from "../../data/data";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper";
-import GridElement from "@/components/grid-element";
+import TourCard from "@/app/components/TourCard";
 export function SwiperCarousel() {
   return (
     <>
@@ -28,13 +28,16 @@ export function SwiperCarousel() {
         className="mySwiper"
         breakpoints={{
           768: {
+            slidesPerView: 2,
+          },
+          1000: {
             slidesPerView: 3,
           },
         }}
       >
         {CarouselItems.map((item) => (
           <SwiperSlide key={item.id}>
-            <GridElement {...item} />
+            <TourCard {...item} />
           </SwiperSlide>
         ))}
       </Swiper>

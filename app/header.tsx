@@ -5,15 +5,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 //local imports
 import Logo from "public/logo.jpg";
-import { PopMenu } from "../components/popup-menu";
-import HeaderInfo from "../components/header-info";
+import { PopMenu } from "./components/popup-menu";
+import HeaderInfo from "./components/header-info";
 
 export function Header() {
   const pathName = usePathname();
 
   return (
-    <nav className="bg-white text-sm border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white-800 ">
-      <div className="flex justify-between items-center mx-auto max-w-screen-xl ">
+    <nav className="fixed w-full z-10 bg-white text-sm px-4 lg:px-6 py-2.5 ">
+      <div className="flex justify-between items-center mx-auto">
         <Link href="/" className="flex basis-1/3 items-center">
           <Image
             src={Logo}
@@ -30,7 +30,7 @@ export function Header() {
           className="hidden  basis-1/3 justify-between items-center w-full ml-30 lg:flex lg:w-auto lg:order-1"
           id="mobile-menu-2"
         >
-          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+          <ul className="flex flex-col mt-4 min-w-[394px] lg:flex-row lg:space-x-8 lg:mt-0">
             <li>
               <Link
                 href="/"
@@ -81,6 +81,23 @@ export function Header() {
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
               >
                 Авторские Туры
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/cities"
+                style={
+                  pathName === "/cities"
+                    ? {
+                        borderBottom: "3px solid #F2AB1C",
+                        borderRadius: "2px",
+                        color: "#112B3C",
+                      }
+                    : {}
+                }
+                className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
+              >
+                Города
               </Link>
             </li>
             <li>

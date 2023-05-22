@@ -2,9 +2,10 @@ import Image from "next/image";
 import Images from "public/Images.png";
 import { SwiperCarousel } from "./carousel/swiperCarousel";
 import { Cities } from "../data/data";
-import { City } from "../../components/city";
+import { City } from "../components/city";
 import SwiperReviews from './carousel/swiperReviews';
 import Link from "next/link";
+import Carousel from "@/app/components/Carousel";
 
 export default function Home() {
   return (
@@ -20,7 +21,6 @@ export default function Home() {
           <span className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:text-3xl text-l">
           ВМЕСТЕ С НАМИ
           </span>
-          {/* change below basic yellow into custom color in config file */}
           <button className="transition ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-2 px-4 rounded-full mt-8">
             <p className="text-base p-2 drop-shadow-[0px_4px_1px_rgba(0,0,0,0.1)]">
               Бронировать
@@ -74,7 +74,8 @@ export default function Home() {
             Удивительные места по всему Узбекистану
           </h1>
           <div>
-            <SwiperCarousel />
+            {/* <SwiperCarousel /> */}
+            <Carousel />
           </div>
         </div>
         <div className="flex flex-col py-5 items-center ">

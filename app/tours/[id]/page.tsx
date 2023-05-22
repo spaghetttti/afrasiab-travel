@@ -1,5 +1,5 @@
 "use client";
-import BasicCard from "@/components/basic-card";
+import BasicCard from "@/app/components/BasicCard";
 import { CarouselItems } from "@/app/data/data";
 
 export default function Page({ params }: { params: { id: number } }) {
@@ -14,11 +14,11 @@ export default function Page({ params }: { params: { id: number } }) {
         // className={'w-full h-[25vh] bg-cover bg-center flex justify-center items-center' + imageSrc}
         className={data?.imageStyle}
       >
-        <span className="font-bold text-white drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:text-6xl text-3xl">
+        <span className="font-bold text-white drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:text-3xl text-l lg:text-start text-center">
           {data?.title}
         </span>
       </div>
-      <div className="lg:mx-[8%] lg:text-start m-[4%] text-center ">
+      <div className="lg:mx-[8%] m-[4%]  ">
         <BasicCard {...data} />
       </div>
     </div>

@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div className="lg:px-[8%] lg:py-[4%] lg:text-start px-[4%] py-[2%] text-center ">
       <div className="rounded-xl border-0 p-5 mb-10 shadow-md w-full bg-white">
-        <section className="relative p-10 z-10 overflow-hidden">
+        <section className="relative p-10 z-9 overflow-hidden">
           <div className="container mx-auto">
             <div className="-mx-4 flex flex-wrap lg:justify-between">
               <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -14,7 +14,7 @@ export default function Contact() {
                     Свяжитесь с нами
                   </h2>
                   <p className="text-body-color mb-9 text-base leading-relaxed ">
-                    Хотите отозваться о вашем путешенствии ? <br/>
+                    Хотите отозваться о вашем путешествии ? <br/>
                     Или задать вопросы о туре ? <br/>
                     Не стесняйтесь, мы всегда на связи 🙂 <br/>
                   </p>
@@ -132,8 +132,8 @@ export default function Contact() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
                           fill="#eaa20e"
                         />
