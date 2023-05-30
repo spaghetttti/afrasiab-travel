@@ -13,23 +13,34 @@ export default function HeaderInfo() {
     fetch(
       "https://www.meteosource.com/api/v1/free/point?lat=41.3N&lon=69.2E&sections=current%2Chourly&language=en&units=metric&key=y1f9tymubwge617ftelk5zjkw54dg3chf1ckup94"
     )
-      .then((res) => res.json())
-      .then((data) => setWeather(Number(data.current.temperature)));
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return res.json();
+      })
+      .then((data) => setWeather(Number(data.current.temperature)))
+      .catch((error) => {
+        console.error("Error fetching user: ", error);
+        throw error;
+      })  ;
   }, []);
 
   var myHeaders = new Headers();
   myHeaders.append("apikey", "mZB93UQkDfGcanNx5wrVgWbjzS5EyS7S");
-  
+
   var requestOptions = {
-    method: 'GET',
-    headers: myHeaders
+    method: "GET",
+    headers: myHeaders,
   };
   useEffect(() => {
-  
-  fetch("https://api.apilayer.com/exchangerates_data/convert?to=UZS&from=USD&amount=1", requestOptions)
-    .then(response => response.json())
-    .then(result => setCurrency(result.result))
-    .catch(error => console.log('error', error));
+    fetch(
+      "https://api.apilayer.com/exchangerates_data/convert?to=UZS&from=USD&amount=1",
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((result) => setCurrency(result.result))
+      .catch((error) => console.log("error", error));
   }, []);
 
   return (

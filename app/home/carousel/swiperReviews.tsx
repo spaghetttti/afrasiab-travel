@@ -18,7 +18,7 @@ import { EffectCards, Pagination } from "swiper";
 
 export default function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
-  console.log(isMobile);
+
   useEffect(() => {
     function handleResize() {
       setIsMobile(window.innerWidth <= 767);
@@ -33,27 +33,51 @@ export default function App() {
 
   return (
     <>
-      <Swiper
-        effect={isMobile ? undefined : "cards"}
-        grabCursor={true}
-        // pagination={{
-        //   dynamicBullets: isMobile,
-        // }}
-        pagination={{
-          dynamicBullets: true,
-        }}
-        modules={[EffectCards, Pagination]}
-        className="mySwiper"
-      >
-        {Reviews.map((review) => (
-          <SwiperSlide
-            key={review.id}
-            className="w-[300px] pt-[20xp] border-2 border-grey rounded-2xl bg-white"
-          >
-            <Review {...review} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      {isMobile ? (
+        <Swiper
+          // effect={isMobile ? undefined : "cards"}
+          grabCursor={true}
+          // pagination={{
+          //   dynamicBullets: isMobile,
+          // }}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[EffectCards, Pagination]}
+          className="mySwiper"
+        >
+          {Reviews.map((review) => (
+            <SwiperSlide
+              key={review.id}
+              className="w-[300px] pt-[20xp] border-2 border-grey rounded-2xl bg-white"
+            >
+              <Review {...review} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        <Swiper
+          effect="cards"
+          grabCursor={true}
+          // pagination={{
+          //   dynamicBullets: isMobile,
+          // }}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[EffectCards, Pagination]}
+          className="mySwiper"
+        >
+          {Reviews.map((review) => (
+            <SwiperSlide
+              key={review.id}
+              className="w-[300px] pt-[20xp] border-2 border-grey rounded-2xl bg-white"
+            >
+              <Review {...review} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
     </>
   );
 }
