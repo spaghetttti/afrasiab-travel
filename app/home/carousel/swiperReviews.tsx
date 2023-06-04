@@ -17,15 +17,15 @@ import "./styles.css";
 import { EffectCards, Pagination } from "swiper";
 
 export default function App() {
-  const [isMobile, setIsMobile] = useState(window?.innerWidth <= 767);
+  const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
     function handleResize() {
       setIsMobile(window?.innerWidth <= 767);
     }
-
-    // Add event listener to window resize event
+    
     window?.addEventListener("resize", handleResize);
+    // Add event listener to window resize event
 
     // Remove event listener on cleanup
     return () => window?.removeEventListener("resize", handleResize);
