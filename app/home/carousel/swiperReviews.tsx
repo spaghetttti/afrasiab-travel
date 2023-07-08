@@ -10,58 +10,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-
 import "./styles.css";
 
 // import required modules
 import { EffectCards, Pagination } from "swiper";
 
 export default function App() {
-  const [isMobile, setIsMobile] = useState(true);
-
-  useEffect(() => {
-    function handleResize() {
-      setIsMobile(window?.innerWidth <= 767);
-    }
-
-    window?.addEventListener("resize", handleResize);
-    // Add event listener to window resize event
-
-    // Remove event listener on cleanup
-    return () => window?.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <>
-      {isMobile ? (
-        <Swiper
-          // effect={isMobile ? undefined : "cards"}
-          grabCursor={true}
-          // pagination={{
-          //   dynamicBullets: isMobile,
-          // }}
-          pagination={{
-            dynamicBullets: true,
-          }}
-          modules={[EffectCards, Pagination]}
-          className="mySwiper"
-        >
-          {Reviews.map((review) => (
-            <SwiperSlide
-              key={review.id}
-              className="w-[300px] pt-[20xp] border-2 border-grey rounded-2xl bg-white"
-            >
-              <Review {...review} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      ) : (
+      <div className="hidden md:block">
         <Swiper
           effect="cards"
           grabCursor={true}
-          // pagination={{
-          //   dynamicBullets: isMobile,
-          // }}
           pagination={{
             dynamicBullets: true,
           }}
@@ -77,7 +37,27 @@ export default function App() {
             </SwiperSlide>
           ))}
         </Swiper>
-      )}
+      </div>
+      <div className="block md:hidden">
+        <Swiper
+          spaceBetween={3}
+          grabCursor={true}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[EffectCards, Pagination]}
+          className="mySwiper"
+        >
+          {Reviews.map((review) => (
+            <SwiperSlide
+              key={review.id}
+              className="w-[300px] pt-[20xp] border-2 border-grey rounded-2xl bg-white"
+            >
+              <Review {...review} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </>
   );
 }
