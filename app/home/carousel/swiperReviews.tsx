@@ -23,7 +23,7 @@ export default function App() {
     function handleResize() {
       setIsMobile(window?.innerWidth <= 767);
     }
-    
+
     window?.addEventListener("resize", handleResize);
     // Add event listener to window resize event
 
