@@ -3,11 +3,12 @@ import Clock from "public/Clock_0300.svg";
 import Cloud from "public/Cloud.svg";
 import USD from "public/USD.svg";
 import { useEffect, useState } from "react";
+import { useCurrentTime } from "../hooks/currentTime";
 
 export default function HeaderInfo() {
   const [weather, setWeather] = useState<number>(15);
   const [currency, setCurrency] = useState<number>(11367);
-  const currentDate = new Date();
+const currentTIme = useCurrentTime();
 
   useEffect(() => {
     fetch(
@@ -52,7 +53,7 @@ export default function HeaderInfo() {
       <li className="flex justify-between items-center flex-row">
         <Image src={Clock} className="w-6 mr-3 h-6 sm:h-9" alt="" />
         <p className="block text-sm text-darkBlue">
-          {currentDate.getHours() + ":" + currentDate.getMinutes()}
+        {currentTIme}
         </p>
       </li>
       <li className="flex justify-between items-center flex-row">

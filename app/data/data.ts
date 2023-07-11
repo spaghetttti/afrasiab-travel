@@ -27,7 +27,7 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "7 дней / 6 ночей",
     image: Image2,
-    imageStyle: "w-full h-[25vh] bg-[url('../public/samarkand.jpg')] bg-cover bg-center flex justify-center items-center"
+    imageStyle: "w-full h-[35vh] bg-[url('../public/samarkand.jpg')] bg-cover bg-center flex justify-center items-center"
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "5 дней / 4 ночей",
     image: Image3,
-    imageStyle: "w-full h-[25vh] bg-[url('../public/bukhara-sky.jpg')] bg-cover bg-center flex justify-center items-center"
+    imageStyle: "w-full h-[35vh] bg-[url('../public/bukhara-sky.jpg')] bg-cover bg-center flex justify-center items-center"
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "8 дней / 7 ночей",
     image: Image4,
-    imageStyle: "w-full h-[25vh] bg-[url('../public/chimgan.jpg')] bg-cover bg-center flex justify-center items-center"
+    imageStyle: "w-full h-[35vh] bg-[url('../public/chimgan.jpg')] bg-cover bg-center flex justify-center items-center"
   },
   {
     id: 5,
@@ -54,15 +54,15 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "8 дней / 7 ночей",
     image: Image5,
-    imageStyle: "w-full h-[25vh] bg-[url('../public/bazaar.jpg')] bg-cover bg-center flex justify-center items-center"
+    imageStyle: "w-full h-[35vh] bg-[url('../public/bazaar.jpg')] bg-cover bg-center flex justify-center items-center"
   },
 ];
 
 export const Cities = [
-  { id: 1, image: Hiva, title: "Хива", imageStyle: "w-full h-[25vh] bg-[url('../public/mosque.jpg')] bg-cover bg-center flex justify-center items-center" },
-  { id: 2, image: Tashkent, title: "Ташкент", imageStyle: "w-full h-[25vh] bg-[url('../public/tashkent.jpg')] bg-cover bg-center flex justify-center items-center" },
-  { id: 3, image: Samarkand, title: "Самарканд", imageStyle: "w-full h-[25vh] bg-[url('../public/samarkand-big.jpg')] bg-cover bg-center flex justify-center items-center" },
-  { id: 4, image: Bukhara, title: "Бухара", imageStyle: "w-full h-[25vh] bg-[url('../public/bukhara.jpg')] bg-cover bg-center flex justify-center items-center" },
+  { id: 1, image: Hiva, title: "Хива", imageStyle: "w-full h-[35vh] bg-[url('../public/mosque.jpg')] bg-cover bg-center flex justify-center items-center" },
+  { id: 2, image: Tashkent, title: "Ташкент", imageStyle: "w-full h-[35vh] bg-[url('../public/tashkent.jpg')] bg-cover bg-center flex justify-center items-center" },
+  { id: 3, image: Samarkand, title: "Самарканд", imageStyle: "w-full h-[35vh] bg-[url('../public/samarkand-big.jpg')] bg-cover bg-center flex justify-center items-center" },
+  { id: 4, image: Bukhara, title: "Бухара", imageStyle: "w-full h-[35vh] bg-[url('../public/bukhara.jpg')] bg-cover bg-center flex justify-center items-center" },
   // { id: 5, image: Image3, title: "Хорезм" },
 ];
 

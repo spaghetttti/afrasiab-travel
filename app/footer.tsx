@@ -1,9 +1,12 @@
+import Link from "next/link";
 import Image from "next/image";
 import Logo from "public/logo.jpg";
 import facebookIcon from "public/facebook.svg";
-import instagramIcon from "public/instagram.svg";
-import youtubeIcon from "public/youtube.svg";
-import Link from "next/link";
+// import instagramIcon from "public/instagram.svg";
+import { AiFillInstagram, AiFillFacebook, AiFillYoutube } from "react-icons/ai";
+import {BsFillTelephoneFill, BsTelegram} from 'react-icons/bs';
+import {MdEmail} from 'react-icons/md';
+import {FaTripadvisor} from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -11,15 +14,23 @@ export default function Footer() {
       <div className="flex flex-col grow-0 space-y-4">
         <Image src={Logo} className="w-[100px] h-auto" alt="" />
         <div className="text-sm">г. Самарканд, ул. Орзу Махмудова дом 18</div>
-        <div className="flex space-x-2">
+        <div className="flex items-center gap-2 text-sm"><BsFillTelephoneFill/>+998 99 771 73 30</div>
+        <div className="flex items-center gap-2 text-sm"><MdEmail/>info@afrasiab-travel.com</div>
+        <div className="flex space-x-3 text-yellow">
           <Link href="/">
-            <Image src={facebookIcon} alt="" className="w-[30px] h-auto" />
+            <AiFillFacebook className="w-[25px] h-[25px]" />
           </Link>
           <Link href="/">
-            <Image src={instagramIcon} alt="" className="w-[30px] h-auto" />
+            <AiFillInstagram className="w-[25px] h-[25px]" />
           </Link>
           <Link href="/">
-            <Image src={youtubeIcon} alt="" className="w-[30px] h-auto" />
+            <AiFillYoutube className="w-[25px] h-[25px]"/>
+          </Link>
+          <Link href="/">
+            <FaTripadvisor className="w-[25px] h-[25px]"/>
+          </Link>
+          <Link href="/">
+            <BsTelegram className="w-[25px] h-[25px]"/>
           </Link>
         </div>
       </div>
@@ -27,7 +38,7 @@ export default function Footer() {
         <div className="flex flex-col">
           <h4 className="text-base font-bold">Главная</h4>
           <div className="mt-2 flex lg:flex-col sm:flex-row lg:space-y-2 justify-between">
-          <Link href="/">Главная</Link>
+            <Link href="/">Главная</Link>
             <Link href="/about">О нас</Link>
             <Link href="/tours">Авторские Туры</Link>
             <Link href="/cities">Города</Link>
@@ -39,7 +50,7 @@ export default function Footer() {
           <p className="text-sm">
             Хотите получать новости о новых публикациях ?
           </p>
-          <form >
+          <form>
             <div className="relative">
               <input
                 id="default-search"
