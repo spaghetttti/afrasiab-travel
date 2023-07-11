@@ -2,6 +2,7 @@ import Footer from "./footer";
 import "./globals.css";
 import { Header } from "./header";
 import { Ubuntu } from "next/font/google";
+import ScrollToTop from "./components/ScrollToTop";
 // import Error from "./error";
 
 const ubuntu = Ubuntu({
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className="text-darkBlue">
         <main className={ubuntu.className}>
           <Header />
+          <ScrollToTop/>
           {/* <ErrorBoundary fallback={<Error />}> */}
             <main className="bg-[#F6F6F6] pt-[75px]">{children}</main>
           {/* </ErrorBoundary> */}
