@@ -1,7 +1,7 @@
 import Footer from "./footer";
 import "./globals.css";
 import { Header } from "./header";
-import { Ubuntu } from "@next/font/google";
+import { Ubuntu } from "next/font/google";
 // import Error from "./error";
 
 const ubuntu = Ubuntu({

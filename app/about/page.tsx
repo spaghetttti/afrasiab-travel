@@ -103,7 +103,7 @@ export default function About() {
       <div className="lg:px-[8%] lg:text-start px-[4%] flex justify-center ">
         <div className="rounded-xl border-0 p-5 mb-10 shadow-md w-full bg-white">
           <div className="w-full p-3">
-            <h3 className="text-m font-bold">
+            <h3 className="text-m font-bold pb-4">
               Туристическая компания "Afrasiab Travel"
             </h3>
             <p>
@@ -131,7 +131,7 @@ export default function About() {
               <li>Категория обслуживания.</li>
             </ul>
 
-            <h3 className="text-base font-bold">
+            <h3 className="text-base font-bold py-2">
               Перечень туристических услуг, предлагаемых заказчику:
             </h3>
             <ul className="list-inside list-disc">
@@ -167,7 +167,7 @@ export default function About() {
               <li>Корпоративные туры;</li>
               <li>MICE-туризм.</li>
             </ul>
-            <p className="text-base font-bold">
+            <p className="text-base font-bold pt-4">
               Добро пожаловать в Узбекистан!
             </p>
           </div>
