@@ -74,7 +74,7 @@ export default function Home() {
             Удивительные места по всему Узбекистану
           </h1>
           <div>
-            <SwiperCarousel />
+            {/* <SwiperCarousel /> */}
             <Carousel />
           </div>
         </div>
