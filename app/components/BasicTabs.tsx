@@ -6,10 +6,8 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
+import ReactMarkdown from "react-markdown";
 import { Gallery } from "react-grid-gallery";
-
-import Image from "next/image";
-import test from "../../public/khiva/Picture1.jpg";
 
 interface BasicTabsProps {
   tabs: {
@@ -80,11 +78,8 @@ export default function BasicTabs({ tabs }: BasicTabsProps) {
       <TabsBody>
         {tabs?.map(({ value, desc }) => (
           <TabPanel key={value} value={value}>
-            <div
-              className="text-base sm:text-sm whitespace-pre-wrap"
-              // dangerouslySetInnerHTML={{ __html: desc }}
-            >
-              {typeof desc == "string" && desc}
+            <div className="text-base sm:text-sm whitespace-pre-wrap ">
+              {typeof desc == "string" && <ReactMarkdown children={desc} />}
               {typeof desc == "object" && <Gallery images={desc} />}
             </div>
           </TabPanel>
