@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useRef  } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./carousel.css";
 
@@ -15,6 +16,7 @@ import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper";
 import TourCard from "@/app/components/TourCard";
 export function SwiperCarousel() {
+
   return (
     <>
       <Swiper
@@ -30,7 +32,7 @@ export function SwiperCarousel() {
           768: {
             slidesPerView: 2,
           },
-          1000: {
+          1175: {
             slidesPerView: 3,
           },
         }}
