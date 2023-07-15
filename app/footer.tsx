@@ -49,6 +49,7 @@ export default function Footer() {
               <Link href="/about">О нас</Link>
               <Link href="/tours">Авторские Туры</Link>
               <Link href="/cities">Города</Link>
+              <Link href="/sights">Достопримечательности</Link>
               <Link href="/contacts">Контакты</Link>
             </div>
           </div>

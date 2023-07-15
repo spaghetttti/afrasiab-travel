@@ -928,7 +928,7 @@ export default function Contact() {
                           role="alert"
                         >
                           {errors.name?.type === "required" &&
-                            `Ваше имя необходимо`}
+                            `Ваше имя необходимо`}  
                           {errors.name?.type === "maxLength" &&
                             `Имя не должно превышать 25 символов`}
                         </div>
