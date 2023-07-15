@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const withMT = require("@material-tailwind/react/utils/withMT");
+const colors = require('tailwindcss/colors')        
 
 module.exports = {
   content: [
@@ -13,13 +14,17 @@ module.exports = {
   ],
   theme: {
       colors: {
-        white: "#FFFFFF",
+        black: colors.black,
+        white: colors.white,
+        red: colors.red,
+        gray: colors.gray,
+        emerald: colors.emerald,
+        indigo: colors.indigo,
         blue: '#174664',
         lightBlue: '#3056D3',
         darkBlue: "#112B3C",
         yellow: "#F2AB1C",
         darkYellow: '#eaa20e',
-        grey: "#808080",
         lightGrey: "#80808012"
       },
       fontSize: {
