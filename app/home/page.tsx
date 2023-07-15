@@ -22,9 +22,7 @@ export default function Home() {
             ВМЕСТЕ С НАМИ
           </span>
           <button className="transition ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-3 px-6 rounded-full mt-8">
-            <p className="text-base">
-              Бронировать
-            </p>
+            <p className="text-base">Бронировать</p>
           </button>
         </h1>
       </div>
@@ -85,7 +83,7 @@ export default function Home() {
           <h1 className="text-xl leading-tight lg:text-2xl text-darkBlue font-bold mb-5">
             Довольные клиенты по всему миру
           </h1>
-          {/* <SwiperReviews /> */}
+          <SwiperReviews />
           <h1 className="leading-tight mt-8 text-xl lg:text-2xl text-darkBlue font-bold ">
             История городов Узбекистана
           </h1>
