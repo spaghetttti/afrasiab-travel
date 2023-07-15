@@ -18,7 +18,7 @@ export default function BasicCard({ ...data }: any) {
           </div>
         </div>
 
-        <BasicTabs />
+        <BasicTabs tabs={data.tabs} />
         {/* <div>
           <div className="flex items-center justify-between text-slate-500">
             <div className="flex space-x-4 md:space-x-8">
