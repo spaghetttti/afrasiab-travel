@@ -841,7 +841,7 @@ export default function Contact() {
                 <span className="text-primary mb-4 block text-base font-semibold">
                   Наши контакты
                 </span>
-                <h2 className="text-dark mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                <h2 className="text-dark mb-3 m:mb-6 font-bold uppercase text-m lg:text-l xl:text-xl">
                   Свяжитесь с нами
                 </h2>
                 <p className="text-body-color mb-9 text-base leading-relaxed ">
@@ -861,7 +861,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div className="">
-                    <h4 className="text-dark mb-1 text-l font-bold">
+                    <h4 className="text-dark mb-1 text-m md:text-l font-bold">
                       Наша локация
                     </h4>
                     <p className="text-body-color text-base">
@@ -883,7 +883,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div className="">
-                    <h4 className="text-dark mb-1 text-l font-bold">
+                    <h4 className="text-dark mb-1 text-m md:text-l font-bold">
                       Номер телефона
                     </h4>
                     <p className="text-body-color text-base">
@@ -903,7 +903,7 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div className="">
-                    <h4 className="text-dark mb-1 text-l font-bold">Email</h4>
+                    <h4 className="text-dark mb-1 text-m md:text-l font-bold">Email</h4>
                     <p className="text-body-color text-base">
                       info@afrasiab-travel.com
                     </p>

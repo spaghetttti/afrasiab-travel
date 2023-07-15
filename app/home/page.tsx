@@ -85,7 +85,7 @@ export default function Home() {
           <h1 className="text-xl leading-tight lg:text-2xl text-darkBlue font-bold mb-5">
             Довольные клиенты по всему миру
           </h1>
-          <SwiperReviews />
+          {/* <SwiperReviews /> */}
           <h1 className="leading-tight mt-8 text-xl lg:text-2xl text-darkBlue font-bold ">
             История городов Узбекистана
           </h1>
