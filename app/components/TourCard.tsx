@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export interface gridElementProps {
   id?: number;
@@ -12,15 +11,13 @@ export interface gridElementProps {
 }
 
 export default function TourCard({ ...data }: gridElementProps) {
-  const pathName = usePathname();
-  console.log(pathName, data.id);
   return (
-    <div className="justify-center m-4 max-w-[340px] min-w-[320px] h-[390px] border-0 bg-white border-white rounded-2xl shadow-[0px_1px_4px_rgba(0,0,0,0.5)]">
+    <div className="justify-center max-w-[320px] min-w-[320px] h-[390px] border-0 bg-white border-white rounded-2xl shadow-[0px_1px_4px_rgba(0,0,0,0.5)]">
       <Link href={data.price ? `/tours/${data.id}` : `/cities/${data.id}`}>
         <Image
           className="w-full h-[240px] border-0 rounded-t-2xl"
           src={data.image}
-          alt=""
+          alt="tour image"
         />
         <div className="p-5 h-[150px] flex flex-col justify-between">
           <div>
