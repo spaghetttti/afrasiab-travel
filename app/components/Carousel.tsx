@@ -7,6 +7,7 @@ const Carousel = () => {
   const maxScrollWidth = useRef(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const carousel = useRef<any>(null);
+  const widthOfOneCard = 352;
 
   const movePrev = () => {
     if (currentIndex > 0) {
@@ -17,7 +18,7 @@ const Carousel = () => {
   const moveNext = () => {
     if (
       carousel.current !== null &&
-      carousel.current.offsetWidth * currentIndex <= maxScrollWidth.current
+      widthOfOneCard * currentIndex <= maxScrollWidth.current
     ) {
       setCurrentIndex((prevState) => prevState + 1);
     }
@@ -30,7 +31,7 @@ const Carousel = () => {
 
     if (direction === "next" && carousel.current !== null) {
       return (
-        carousel.current.offsetWidth * currentIndex >= maxScrollWidth.current
+        widthOfOneCard * currentIndex >= maxScrollWidth.current
       );
     }
 
@@ -39,7 +40,7 @@ const Carousel = () => {
 
   useEffect(() => {
     if (carousel !== null && carousel.current !== null) {
-      carousel.current.scrollLeft = carousel.current.offsetWidth * currentIndex;
+      carousel.current.scrollLeft = widthOfOneCard * currentIndex;
     }
   }, [currentIndex]);
 
@@ -54,7 +55,7 @@ const Carousel = () => {
       <div className="relative">
         <div
           ref={carousel}
-          className="carousel-container relative flex gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
+          className="p-2 relative flex justify-between gap-8 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
         >
           {CarouselItems.map((item) => (
             <TourCard {...item} key={`carousel-id-${item.id}`} />

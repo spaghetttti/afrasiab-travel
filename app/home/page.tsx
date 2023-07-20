@@ -71,7 +71,7 @@ export default function Home() {
           <h1 className="leading-tight text-xl lg:text-2xl text-darkBlue font-bold mb-5">
             Удивительные места по всему Узбекистану
           </h1>
-          <div>
+          <div className="">
             {/* <SwiperCarousel /> */}
             <Carousel />
           </div>
