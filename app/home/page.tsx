@@ -21,10 +21,8 @@ export default function Home() {
           <span className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:text-3xl text-l">
             ВМЕСТЕ С НАМИ
           </span>
-          <button className="transition ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-2 px-4 rounded-full mt-8">
-            <p className="text-base p-2 drop-shadow-[0px_4px_1px_rgba(0,0,0,0.1)]">
-              Бронировать
-            </p>
+          <button className="transition ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-3 px-6 rounded-full mt-8">
+            <p className="text-base">Бронировать</p>
           </button>
         </h1>
       </div>
@@ -73,7 +71,7 @@ export default function Home() {
           <h1 className="leading-tight text-xl lg:text-2xl text-darkBlue font-bold mb-5">
             Удивительные места по всему Узбекистану
           </h1>
-          <div>
+          <div className="">
             {/* <SwiperCarousel /> */}
             <Carousel />
           </div>
