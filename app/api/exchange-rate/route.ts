@@ -3,7 +3,7 @@
 
 const cacheDir = "./cache";
 
-export async function fetchApiData() {
+async function fetchApiData() {
   const myHeaders = new Headers();
   myHeaders.append("apikey", "mZB93UQkDfGcanNx5wrVgWbjzS5EyS7S");
 
