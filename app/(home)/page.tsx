@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Images from "public/Images.png";
-import { SwiperCarousel } from "./carousel/swiperCarousel";
-import { Cities } from "../data/data";
+import { CarouselItems, Cities } from "../data/data";
 import { City } from "../components/city";
 import SwiperReviews from "./carousel/swiperReviews";
 import Link from "next/link";
-import Carousel from "@/app/components/Carousel";
+import TourCard from "../components/TourCard";
 
 export default function Home() {
   return (
@@ -71,9 +70,17 @@ export default function Home() {
           <h1 className="leading-tight text-xl lg:text-2xl text-darkBlue font-bold mb-5">
             Удивительные места по всему Узбекистану
           </h1>
-          <div className="">
-            {/* <SwiperCarousel /> */}
-            <Carousel />
+          <div>
+            {/* <Carousel /> //!not needed */}
+            <div className="flex justify-center">
+              <div className="justify-items-center grid-center text-darkBlue grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 min-[1150px]:grid-cols-3 gap-4">
+                {CarouselItems.map((item) => (
+                  <div className="m-4">
+                    <TourCard key={`key-${item.id}`} {...item} />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex flex-col py-5 items-center ">

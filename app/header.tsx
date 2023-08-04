@@ -17,9 +17,7 @@ export function Header() {
         <Link href="/" className="flex basis-1/3 items-center">
           <Image
             src={Logo}
-            width={80}
-            height={100}
-            className="mr-3 w-20 h-auto"
+            className="mr-3 w-[80px] md:w-[110px]"
             alt="Logo"
           />
         </Link>
@@ -27,7 +25,7 @@ export function Header() {
           <PopMenu />
         </div>
         <div
-          className="hidden basis-2/3 justify-between items-center w-full ml-30 lg:flex lg:w-auto lg:order-1"
+          className="hidden basis-1 justify-between items-center w-full ml-30 lg:flex lg:w-auto lg:order-1"
           id="mobile-menu-2"
         >
           <ul className="flex flex-col mt-4 min-w-[390px] lg:flex-row lg:space-x-8 lg:mt-0">
@@ -61,7 +59,7 @@ export function Header() {
                       }
                     : {}
                 }
-                className="block hover:text-darkBlue  py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
+                className="block whitespace-nowrap hover:text-darkBlue  py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
               >
                 О нас
               </Link>
@@ -78,7 +76,7 @@ export function Header() {
                       }
                     : {}
                 }
-                className="block hover:text-darkBlue py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
+                className="block whitespace-nowrap hover:text-darkBlue py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
               >
                 Авторские Туры
               </Link>
@@ -100,7 +98,7 @@ export function Header() {
                 Города
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/sights"
                 style={
@@ -116,7 +114,7 @@ export function Header() {
               >
                 Достопримечательности
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 href="/contacts"

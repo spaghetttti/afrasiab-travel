@@ -3,7 +3,7 @@ import { CarouselItems } from "../data/data";
 // import { usePathname} from "next/navigation";
 import TourCard from "../components/TourCard";
 
-export default function GridMenu() {
+export default function GridTourMenu() {
   // const pathName = usePathname();
   return (
     <div className="flex justify-center">
