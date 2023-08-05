@@ -45,7 +45,7 @@ export function PopMenu() {
         </svg>
       </button>
       {showModal && (
-        <div className="mx-5 overscroll-auto justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-9999999999 outline-none focus:outline-none">
+        <div className="mx-5 overscroll-auto justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-20 outline-none focus:outline-none">
           <div className="relative w-[80%] mx-auto max-w-3xl">
             {/*content*/}
             <div className="border-0 rounded-lg pb-6 pt-2 gap-2 shadow-lg relative flex flex-col bg-white outline-none focus:outline-none">
