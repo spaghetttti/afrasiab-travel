@@ -32,9 +32,9 @@ export default function Footer() {
           {/* <Link href="/">
             <AiFillYoutube className="w-[25px] h-[25px]" />
           </Link> */}
-          <Link href="/">
+          {/* <Link href="/">
             <FaTripadvisor className="w-[25px] h-[25px]" />
-          </Link>
+          </Link> */}
           <Link href="https://t.me/afrasiabtravell">
             <BsTelegram className="w-[25px] h-[25px]" />
           </Link>

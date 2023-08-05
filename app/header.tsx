@@ -21,7 +21,7 @@ export function Header() {
             alt="Logo"
           />
         </Link>
-        <div className="flex items-center lg:hidden">
+        <div className="flex items-center lg:hidden z-1">
           <PopMenu />
         </div>
         <div
@@ -44,7 +44,7 @@ export function Header() {
                 className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400"
                 aria-current="page"
               >
-                Главная 
+                Главная
               </Link>
             </li>
             <li>
@@ -134,7 +134,10 @@ export function Header() {
             </li>
           </ul>
         </div>
-        <div className="hidden basis-1/3 lg:flex items-center w-auto justify-end lg:order-1" id="mobile-menu-2">
+        <div
+          className="hidden basis-1/3 lg:flex items-center w-auto justify-end lg:order-1"
+          id="mobile-menu-2"
+        >
           <HeaderInfo />
         </div>
       </div>

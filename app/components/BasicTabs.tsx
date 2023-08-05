@@ -6,8 +6,18 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
+import ReactMarkdown from "react-markdown";
+import { Gallery } from "react-grid-gallery";
 
-export default function BasicTabs() {
+interface BasicTabsProps {
+  tabs: {
+    label: string;
+    value: string;
+    desc: string | [];
+  }[];
+}
+
+export default function BasicTabs({ tabs }: BasicTabsProps) {
   const data = [
     {
       label: "Общая Информация",
@@ -60,15 +70,21 @@ export default function BasicTabs() {
     <Tabs value="html" className="mt-2">
       <TabsHeader  className="z-0 flex flex-col lg:flex-row flex-wrap ">
         {data.map(({ label  , value }) => (
+    <Tabs value="about" className="mt-2 z-0">
+      <TabsHeader className="z-0 flex flex-col lg:flex-row flex-wrap">
+        {tabs?.map(({ label, value }) => (
           <Tab className="text-sm w-auto mr-4 p-2" key={value} value={value}>
             {label}
           </Tab>
         ))}
       </TabsHeader>
       <TabsBody>
-        {data.map(({ value, desc }) => (
-          <TabPanel  key={value} value={value}>
-            <div className="text-base">{desc}</div>
+        {tabs?.map(({ value, desc }) => (
+          <TabPanel key={value} value={value}>
+            <div className="text-base sm:text-sm whitespace-pre-wrap ">
+              {typeof desc == "string" && <ReactMarkdown children={desc} />}
+              {typeof desc == "object" && <Gallery images={desc} />}
+            </div>
           </TabPanel>
         ))}
       </TabsBody>
