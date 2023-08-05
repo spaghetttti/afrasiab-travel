@@ -15,7 +15,7 @@ export default function HeaderInfo() {
 
   useEffect(() => {
     fetch(
-      "https://www.meteosource.com/api/v1/free/point?lat=41.3N&lon=69.2E&sections=current%2Chourly&language=en&units=metric&key=y1f9tymubwge617ftelk5zjkw54dg3chf1ckup94"
+      "/api/weather"
     )
       .then((res) => {
         if (!res.ok) {
@@ -23,7 +23,7 @@ export default function HeaderInfo() {
         }
         return res.json();
       })
-      .then((data) => setWeather(Number(data.current.temperature)))
+      .then((data) => setWeather(Number(data.temperature)))
       .catch((error) => {
         console.error("Error fetching user: ", error);
         throw error;
@@ -31,7 +31,7 @@ export default function HeaderInfo() {
   }, []);
 
   useEffect(() => {
-    fetch(`/api/exchange-rate`)
+    fetch('/api/exchange-rate')
       .then((res) => res.json())
       .then((data) => setCurrency(data.result))
       .catch((error) => console.error("error", error));
