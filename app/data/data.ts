@@ -2,7 +2,7 @@ import Image1 from "public/mausoleum.jpg";
 import Image2 from "public/samarkand.jpg";
 import Image3 from "public/bukhara-sky.jpg";
 import Image4 from "public/chimgan.jpg";
-import Image5 from "public/bazaar.jpg";
+import Image5 from 'public/cemetery.jpg'
 import Bukhara from "public/bukhara.jpg";
 import Tashkent from "public/tashkent.jpg";
 import Hiva from "public/mosque.jpg";
@@ -54,7 +54,7 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "8 дней / 7 ночей",
     image: Image5,
-    imageStyle: "w-full h-[35vh] bg-[url('../public/bazaar.jpg')] bg-cover bg-center flex justify-center items-center"
+    imageStyle: "w-full h-[35vh] bg-[url('../public/cemetery.jpg')] bg-cover bg-center flex justify-center items-center"
   },
 ];
 
@@ -100,3 +100,4 @@ export const Reviews = [
     review: "Этот тур великолепен, с хорошо спланированным маршрутом, который приведет вас к захватывающим дух местам. Ваш знающий и дружелюбный гид предоставит интересные сведения об истории и культуре региона",
   },
 ];
+ 

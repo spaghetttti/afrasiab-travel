@@ -5,6 +5,7 @@ import { City } from "../components/city";
 import SwiperReviews from "./carousel/swiperReviews";
 import Link from "next/link";
 import TourCard from "../components/TourCard";
+import NewTourCard from "../components/NewTourCard";
 
 export default function Home() {
   return (
@@ -77,6 +78,15 @@ export default function Home() {
                 {CarouselItems.map((item) => (
                   <div className="m-4">
                     <TourCard key={`key-${item.id}`} {...item} />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="justify-items-center grid-center text-darkBlue grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 min-[1150px]:grid-cols-3 gap-4">
+                {CarouselItems.map((item) => (
+                  <div className="m-4">
+                    <NewTourCard key={`key-${item.id}`} {...item} />
                   </div>
                 ))}
               </div>

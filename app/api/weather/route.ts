@@ -8,15 +8,12 @@ function useOldWeatherData(data: any) {
             currentWeather = weatherByHour;
         }
     })
-    console.log('its the same day and hour');
-    console.log(currentWeather);
+    // console.log('its the same day and hour');
+    // console.log(currentWeather);
     return currentWeather;
 }
 
 async function fetchApiData() {
-  const myHeaders = new Headers();
-  myHeaders.append("apikey", "mZB93UQkDfGcanNx5wrVgWbjzS5EyS7S");
-
   const response = await fetch(
     "https://www.meteosource.com/api/v1/free/point?lat=41.3N&lon=69.2E&sections=current%2Chourly&language=en&units=metric&key=y1f9tymubwge617ftelk5zjkw54dg3chf1ckup94",
     {
@@ -31,8 +28,5 @@ async function fetchApiData() {
 
 export async function GET(request: Request) {
   const apiData = await fetchApiData();
-
-  console.log(apiData);
-
   return new Response(JSON.stringify(apiData));
 }
