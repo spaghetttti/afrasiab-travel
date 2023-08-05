@@ -18,7 +18,6 @@ export default function BasicCard({ ...data }: any) {
           </div>
         </div>
 
-        <BasicTabs />
         <BasicTabs tabs={data.tabs} />
 
       </div>
