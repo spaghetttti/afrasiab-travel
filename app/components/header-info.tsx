@@ -32,7 +32,7 @@ export default function HeaderInfo() {
 
   useEffect(() => {
     fetch(`/api/exchange-rate`)
-      .then((res) => (res.json()))
+      .then((res) => res.json())
       .then((data) => setCurrency(data.result))
       .catch((error) => console.error("error", error));
   }, []);
@@ -41,7 +41,9 @@ export default function HeaderInfo() {
     <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
       <li className="flex justify-between items-center flex-row">
         <Image src={Cloud} className="w-6 mr-3 h-6 sm:h-9" alt="" />
-        <p className="block whitespace-nowrap text-sm text-darkBlue">{Math.round(weather)} C°</p>
+        <p className="block whitespace-nowrap text-sm text-darkBlue">
+          {Math.round(weather)} C°
+        </p>
       </li>
       <li className="flex justify-between items-center flex-row">
         <Image src={Clock} className="w-6 mr-3 h-6 sm:h-9" alt="" />

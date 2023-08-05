@@ -844,7 +844,7 @@ export default function Contact() {
                 <h2 className="text-dark mb-3 m:mb-6 font-bold uppercase text-m lg:text-l xl:text-xl">
                   Свяжитесь с нами
                 </h2>
-                <p className="text-body-color mb-9 text-base leading-relaxed ">
+                <p className="text-body-color mb-9 text-sm md:text-base leading-relaxed ">
                   Хотите отозваться о вашем путешествии ? <br />
                   Или задать вопросы о туре ? <br />
                   Не стесняйтесь, мы всегда на связи 🙂 <br />
@@ -861,10 +861,10 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div className="">
-                    <h4 className="text-dark mb-1 text-m md:text-l font-bold">
+                    <h4 className="text-dark mb-1 text-base md:text-l font-bold">
                       Наша локация
                     </h4>
-                    <p className="text-body-color text-base">
+                    <p className="text-body-color text-sm md:text-base">
                       г. Самарканд, ул. Орзу Махмудова дом 18
                     </p>
                   </div>
@@ -883,10 +883,10 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div className="">
-                    <h4 className="text-dark mb-1 text-m md:text-l font-bold">
+                    <h4 className="text-dark mb-1 text-base md:text-l font-bold">
                       Номер телефона
                     </h4>
-                    <p className="text-body-color text-base">
+                    <p className="text-body-color text-sm md:text-base">
                       +998 99 771 73 30
                     </p>
                   </div>
@@ -903,8 +903,8 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div className="">
-                    <h4 className="text-dark mb-1 text-m md:text-l font-bold">Email</h4>
-                    <p className="text-body-color text-base">
+                    <h4 className="text-dark mb-1 text-base md:text-l font-bold">Email</h4>
+                    <p className="text-body-color text-sm md:text-base">
                       info@afrasiab-travel.com
                     </p>
                   </div>
