@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Images from "public/Images.png";
-import { CarouselItems, Cities } from "../data/data";
-import { City } from "../components/city";
+import { Cities, tours } from "../data/data";
 import SwiperReviews from "./carousel/swiperReviews";
 import Link from "next/link";
 import TourCard from "../components/TourCard";
-import NewTourCard from "../components/NewTourCard";
+import CityCard from "../components/CityCard";
 
 export default function Home() {
   return (
@@ -74,19 +73,10 @@ export default function Home() {
           <div>
             {/* <Carousel /> //!not needed */}
             <div className="flex justify-center">
-              <div className="justify-items-center grid-center text-darkBlue grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 min-[1150px]:grid-cols-3 gap-4">
-                {CarouselItems.map((item) => (
+              <div className="justify-items-center grid-center text-darkBlue grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+                {tours.map((tour) => (
                   <div className="m-4">
-                    <TourCard key={`key-${item.id}`} {...item} />
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="justify-items-center grid-center text-darkBlue grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 min-[1150px]:grid-cols-3 gap-4">
-                {CarouselItems.map((item) => (
-                  <div className="m-4">
-                    <NewTourCard key={`key-${item.id}`} {...item} />
+                    <TourCard key={`key-${tour.id}`} {...tour} />
                   </div>
                 ))}
               </div>
@@ -111,9 +101,9 @@ export default function Home() {
               </p>
             </Link>
           </button>
-          <div className="flex flex-wrap gap-x-5 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center">
             {Cities.map((oneCity) => (
-              <City {...oneCity} key={oneCity.id} />
+              <CityCard {...oneCity} key={oneCity.id} />
             ))}
           </div>
         </div>

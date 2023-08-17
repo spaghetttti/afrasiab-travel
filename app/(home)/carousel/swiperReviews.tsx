@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Reviews } from "@/app/data/data";
 
 // import { EffectCoverflow, Pagination } from "swiper";
-import Review from "@/app/components/review";
+import Review from "@/app/components/Review";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
