@@ -1,5 +1,5 @@
 "use client";
-import { CarouselItems } from "@/app/data/data";
+import { tours } from "@/app/data/data";
 import { useState, useRef, useEffect } from "react";
 import TourCard from "./TourCard";
 
@@ -57,8 +57,8 @@ const Carousel = () => {
           ref={carousel}
           className="p-2 relative flex justify-between gap-8 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
         >
-          {CarouselItems.map((item) => (
-            <TourCard {...item} key={`carousel-id-${item.id}`} />
+          {tours.map((tour) => (
+            <TourCard {...tour} key={`carousel-id-${tour.id}`} />
           ))}
         </div>
         <div className="flex justify-center">
