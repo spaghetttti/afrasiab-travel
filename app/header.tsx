@@ -5,8 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 //local imports
 import Logo from "public/logo.jpg";
-import { PopMenu } from "./components/popup-menu";
-import HeaderInfo from "./components/header-info";
+import { PopMenu } from "./components/Popupmenu";
+import HeaderInfo from "./components/HeaderInfo";
 
 export function Header() {
   const pathName = usePathname();

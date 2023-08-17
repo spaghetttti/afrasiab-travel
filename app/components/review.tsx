@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Quote from "public/quote.svg";
-import Rating from "./rating";
+import Rating from "./Rating";
 
 interface ReviewProps {
   avatar: any;

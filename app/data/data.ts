@@ -2,7 +2,7 @@ import Image1 from "public/mausoleum.jpg";
 import Image2 from "public/samarkand.jpg";
 import Image3 from "public/bukhara-sky.jpg";
 import Image4 from "public/chimgan.jpg";
-import Image5 from 'public/cemetery.jpg'
+import Image5 from "public/cemetery.jpg";
 import Bukhara from "public/bukhara.jpg";
 import Tashkent from "public/tashkent.jpg";
 import Hiva from "public/mosque.jpg";
@@ -15,7 +15,7 @@ import tashkentGallery from "@/public/tashkent/tashkent.gallery";
 import samarkandGallery from "@/public/samarkand/samarkand.gallery";
 import bukharaGallery from "@/public/bukhara/bukhara.gallery";
 
-export const CarouselItems = [
+export const tours = [
   {
     id: 1,
     title: "Великий Шелковый путь",
@@ -79,7 +79,8 @@ export const CarouselItems = [
     price: "$ 500",
     duration: "8 дней / 7 ночей",
     image: Image5,
-    imageStyle: "w-full h-[35vh] bg-[url('../public/cemetery.jpg')] bg-cover bg-center flex justify-center items-center"
+    imageStyle:
+      "w-full h-[35vh] bg-[url('../public/cemetery.jpg')] bg-cover bg-center flex justify-center items-center",
   },
 ];
 
@@ -88,6 +89,8 @@ export const Cities = [
     id: 1,
     image: Hiva,
     title: "Хива",
+    shot_description:
+      "Город с населением более 500 000 человек и лучшими вузами республики",
     imageStyle:
       "w-full h-[35vh] bg-[url('../public/mosque.jpg')] bg-cover bg-center flex justify-center items-center",
     tabs: [
@@ -139,6 +142,7 @@ export const Cities = [
     id: 2,
     image: Tashkent,
     title: "Ташкент",
+    shot_description: "Крупный мегаполис с населением более 2 500 000 человек",
     imageStyle:
       "w-full h-[35vh] bg-[url('../public/tashkent.jpg')] bg-cover bg-center flex justify-center items-center",
     tabs: [
@@ -180,6 +184,8 @@ export const Cities = [
     id: 3,
     image: Samarkand,
     title: "Самарканд",
+    shot_description:
+      "Город с населением более 500 000 человек и лучшими вузами республики",
     imageStyle:
       "w-full h-[35vh] bg-[url('../public/samarkand-big.jpg')] bg-cover bg-center flex justify-center items-center",
     tabs: [
@@ -221,6 +227,8 @@ export const Cities = [
     id: 4,
     image: Bukhara,
     title: "Бухара",
+    shot_description:
+      "Город-музей, сохранивший на своей территории более 500 архитектурных памятниковх",
     imageStyle:
       "w-full h-[35vh] bg-[url('../public/bukhara.jpg')] bg-cover bg-center flex justify-center items-center",
     tabs: [
@@ -309,4 +317,3 @@ export const Reviews = [
       "Этот тур великолепен, с хорошо спланированным маршрутом, который приведет вас к захватывающим дух местам. Ваш знающий и дружелюбный гид предоставит интересные сведения об истории и культуре региона",
   },
 ];
- 

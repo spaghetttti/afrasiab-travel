@@ -1,9 +1,9 @@
 "use client";
 import BasicCard from "@/app/components/BasicCard";
-import { CarouselItems } from "@/app/data/data";
+import { tours } from "@/app/data/data";
 
 export default function Page({ params }: { params: { id: number } }) {
-  const data = CarouselItems.find((item) => item.id == params.id);
+  const data = tours.find((tour) => tour.id == params.id);
   // const imageSrc = "bg-[url('../public/mosque.jpg')]";
   // const fullStyle = "w-full h-[25vh] bg-[url('../public/mosque.jpg')] bg-cover bg-center flex justify-center items-center";
 
