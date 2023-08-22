@@ -20,9 +20,11 @@ export default function Home() {
           <span className="drop-shadow-[0px_4px_4px_rgba(0,0,0,0.8)] lg:text-3xl text-l">
             ВМЕСТЕ С НАМИ
           </span>
-          <button className="transition ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-3 px-6 rounded-full mt-8">
-            <p className="text-base">Бронировать</p>
-          </button>
+          <a href="/booking">
+            <button className="transition ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-3 px-6 rounded-full mt-8">
+              <p className="text-base">Бронировать</p>
+            </button>
+          </a>
         </h1>
       </div>
       <div className="lg:px-[8%] lg:pt-[4%] lg:text-start px-[4%] pt-[2%] text-center ">

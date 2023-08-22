@@ -26,11 +26,13 @@ export default function About() {
                 все исторические регионы Узбекистана и гарантируем незабываемые
                 впечатления и уникальный опыт путешествия в Узбекистан!.
               </p>
-              <button className="text-white w-full md:w-auto transition ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-2 px-4 rounded-full mt-8">
-                <p className="text-base font-bold p-2 drop-shadow-[0px_4px_1px_rgba(0,0,0,0.1)]">
-                  Бронировать
-                </p>
-              </button>
+              <a href="/booking">
+                <button className="text-white w-full md:w-auto transition ease-in-out delay-150 shadow-[0px_4px_4px_rgba(0,0,0,0.8)] bg-yellow hover:bg-darkYellow py-2 px-4 rounded-full mt-8">
+                  <p className="text-base font-bold p-2 drop-shadow-[0px_4px_1px_rgba(0,0,0,0.1)]">
+                    Бронировать
+                  </p>
+                </button>
+              </a>
             </div>
             {/* Decorative image grid */}
             <div

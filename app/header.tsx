@@ -15,11 +15,7 @@ export function Header() {
     <nav className="fixed w-full z-10 bg-white text-sm px-4 lg:px-6 py-2.5 ">
       <div className="flex justify-between items-center mx-auto">
         <Link href="/" className="flex basis-1/3 items-center">
-          <Image
-            src={Logo}
-            className="mr-3 w-[80px] md:w-[110px]"
-            alt="Logo"
-          />
+          <Image src={Logo} className="mr-3 w-[80px] md:w-[110px]" alt="Logo" />
         </Link>
         <div className="flex items-center lg:hidden z-1">
           <PopMenu />
@@ -35,6 +31,7 @@ export function Header() {
                 style={
                   pathName === "/"
                     ? {
+                        paddingBottom: "5px",
                         borderBottom: "3px solid #F2AB1C",
                         borderRadius: "2px",
                         color: "#112B3C",
@@ -53,6 +50,7 @@ export function Header() {
                 style={
                   pathName === "/about"
                     ? {
+                        paddingBottom: "5px",
                         borderBottom: "3px solid #F2AB1C",
                         borderRadius: "2px",
                         color: "#112B3C",
@@ -70,6 +68,7 @@ export function Header() {
                 style={
                   pathName === "/tours"
                     ? {
+                        paddingBottom: "5px",
                         borderBottom: "3px solid #F2AB1C",
                         borderRadius: "2px",
                         color: "#112B3C",
@@ -87,6 +86,7 @@ export function Header() {
                 style={
                   pathName === "/cities"
                     ? {
+                        paddingBottom: "5px",
                         borderBottom: "3px solid #F2AB1C",
                         borderRadius: "2px",
                         color: "#112B3C",
@@ -121,6 +121,7 @@ export function Header() {
                 style={
                   pathName === "/contacts"
                     ? {
+                        paddingBottom: "5px",
                         borderBottom: "3px solid #F2AB1C",
                         borderRadius: "2px",
                         color: "#112B3C",
